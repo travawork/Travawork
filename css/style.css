@@ -1,1 +1,47 @@
+/* ==========================================================
+   Trava Work - Global Stylesheet
+   ========================================================== */
+
+:root {
+  --primary-navy: #071d45;
+  --secondary-navy: #12356d;
+  --accent-blue: #38bdf8;
+  --text-dark: #172033;
+  --text-muted: #667085;
+  --bg-light: #f8fafc;
+  --white: #ffffff;
+  --border-color: #e5e7eb;
+  --danger-red: #c91424;
+  --success-green: #087653;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+a {
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+/* Base Layout Helpers */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
 
