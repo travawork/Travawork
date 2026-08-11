@@ -3,141 +3,1087 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Travawork — Platform informasi dan pembelajaran untuk persiapan bekerja dan berkembang di Jepang.">
-<title>Travawork — Learn. Prepare. Work in Japan.</title>
+
+<title>Travawork — Learn. Work.Travel.</title>
+
+<meta name="description"
+content="Travawork membantu kamu belajar bahasa Jepang dan mempersiapkan karier menuju Jepang.">
+
 <style>
-:root{--navy:#08111f;--navy2:#101d30;--red:#d91f26;--white:#fff;--muted:#aab5c4;--line:rgba(255,255,255,.1);--card:#101b2b}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--navy);color:var(--white);line-height:1.6}
-a{text-decoration:none;color:inherit}
-.container{width:min(1120px,92%);margin:auto}
-nav{position:sticky;top:0;z-index:10;background:rgba(8,17,31,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.navin{height:72px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-size:25px;font-weight:900;letter-spacing:-1px}.logo span{color:var(--red)}
-.links{display:flex;gap:25px;color:#d8e0eb;font-size:14px}.links a:hover{color:#fff}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:10px;background:var(--red);font-weight:800;font-size:14px;transition:.2s}
-.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
-.btn.alt{background:transparent;border:1px solid var(--line)}
-.hero{padding:95px 0 75px;background:radial-gradient(circle at 80% 10%,rgba(217,31,38,.18),transparent 32%),linear-gradient(180deg,#0b1627 0%,var(--navy) 100%)}
-.badge{display:inline-block;border:1px solid rgba(217,31,38,.45);background:rgba(217,31,38,.08);color:#ff7378;padding:7px 12px;border-radius:99px;font-size:12px;font-weight:800;margin-bottom:22px}
-h1{font-size:clamp(42px,7vw,78px);line-height:1.02;letter-spacing:-3px;max-width:850px}
-h1 span{color:var(--red)}
-.hero p{color:var(--muted);font-size:18px;max-width:650px;margin:25px 0 32px}
-.actions{display:flex;gap:12px;flex-wrap:wrap}
-section{padding:80px 0}
-.section-head{margin-bottom:35px}.eyebrow{color:#ff656a;font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
-h2{font-size:38px;line-height:1.15;margin-top:8px;letter-spacing:-1px}
-.section-head p{color:var(--muted);margin-top:10px;max-width:650px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:25px}
-.icon{width:45px;height:45px;border-radius:12px;background:rgba(217,31,38,.12);display:grid;place-items:center;font-size:21px;margin-bottom:18px}
-.card h3{font-size:19px;margin-bottom:8px}.card p{font-size:14px;color:var(--muted)}
-.material{display:flex;align-items:center;justify-content:space-between;gap:20px}
-.material .info{flex:1}.tag{font-size:11px;color:#ff767a;font-weight:800;text-transform:uppercase}
-.material .btn{white-space:nowrap}
-.video{background:#050b14;border:1px solid var(--line);border-radius:18px;overflow:hidden}
-.video-box{aspect-ratio:16/9;display:grid;place-items:center;background:linear-gradient(135deg,#121e30,#060b13)}
-.play{width:70px;height:70px;border-radius:50%;background:var(--red);display:grid;place-items:center;font-size:27px;padding-left:4px}
-.video-info{padding:20px}.video-info p{color:var(--muted);font-size:14px;margin-top:5px}
-.about{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
-.aboutbox{background:linear-gradient(145deg,#111f32,#0c1523);border:1px solid var(--line);border-radius:20px;padding:35px}
-.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:20px}
-.stat{padding:18px;background:#0a1320;border-radius:12px;border:1px solid var(--line)}.stat strong{font-size:25px}.stat small{display:block;color:var(--muted)}
-.contact{background:linear-gradient(120deg,#121f31,#0b1422);border:1px solid var(--line);border-radius:22px;padding:45px;text-align:center}
-.contact p{color:var(--muted);max-width:650px;margin:12px auto 25px}
-footer{padding:30px 0;border-top:1px solid var(--line);color:#7f8b9c;font-size:13px}
-@media(max-width:800px){.links{display:none}.grid{grid-template-columns:1fr}.about{grid-template-columns:1fr}.hero{padding-top:65px}h1{letter-spacing:-2px}.material{align-items:flex-start;flex-direction:column}.material .btn{width:100%}.contact{padding:30px 20px}}
+:root{
+  --navy:#071d45;
+  --navy2:#12356d;
+  --red:#c91424;
+  --green:#087653;
+  --text:#172033;
+  --muted:#667085;
+  --border:#e5e7eb;
+  --white:#ffffff;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+  background:#fff;
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  width:min(1200px,92%);
+  margin:auto;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav{
+  height:78px;
+  background:#fff;
+  border-bottom:1px solid var(--border);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.nav-inner{
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.logo{
+  width:190px;
+  height:55px;
+  object-fit:contain;
+}
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:30px;
+  font-size:15px;
+  font-weight:600;
+}
+
+.nav-links a{
+  position:relative;
+  padding:28px 0;
+}
+
+.nav-links a:hover{
+  color:var(--red);
+}
+
+.login-btn{
+  background:var(--navy);
+  color:#fff;
+  padding:12px 22px;
+  border-radius:9px;
+  font-weight:700;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  min-height:650px;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+}
+
+.hero-bg{
+  position:absolute;
+  inset:0;
+
+  /*
+  Nanti kita masukkan gambar Jepang
+  dengan nama: hero-japan.jpg
+  */
+
+  background:
+  linear-gradient(
+    90deg,
+    rgba(255,255,255,1) 0%,
+    rgba(255,255,255,.96) 25%,
+    rgba(255,255,255,.60) 48%,
+    rgba(255,255,255,.10) 80%
+  ),
+  url("hero-japan.jpg");
+
+  background-size:cover;
+  background-position:center;
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  padding:80px 0;
+}
+
+.hero-text{
+  max-width:570px;
+}
+
+.eyebrow{
+  color:var(--red);
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+
+.hero h1{
+  font-size:clamp(55px,7vw,82px);
+  line-height:.95;
+  letter-spacing:-4px;
+  color:var(--navy);
+  margin-bottom:25px;
+}
+
+.hero h1 span{
+  color:var(--red);
+}
+
+.hero p{
+  font-size:19px;
+  max-width:520px;
+  margin-bottom:30px;
+  color:#30394b;
+}
+
+.primary-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  background:var(--navy);
+  color:white;
+  padding:14px 23px;
+  border-radius:9px;
+  font-weight:700;
+  transition:.2s;
+}
+
+.primary-btn:hover{
+  transform:translateY(-2px);
+  background:var(--navy2);
+}
+
+
+/* =========================
+   VIDEO
+========================= */
+
+.video-section{
+  padding:90px 0;
+  background:#fff;
+}
+
+.section-heading{
+  margin-bottom:30px;
+}
+
+.section-heading h2{
+  font-size:42px;
+  line-height:1.1;
+  color:var(--navy);
+  letter-spacing:-1px;
+}
+
+.section-heading p{
+  color:var(--muted);
+  margin-top:10px;
+  max-width:650px;
+}
+
+.video-container{
+  width:100%;
+  aspect-ratio:16/9;
+  background:var(--navy);
+  border-radius:20px;
+  overflow:hidden;
+  position:relative;
+  box-shadow:0 20px 50px rgba(7,29,69,.15);
+}
+
+.video-container video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.video-placeholder{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  background:
+  linear-gradient(135deg,#071d45,#163a70);
+}
+
+.play-button{
+  width:75px;
+  height:75px;
+  border-radius:50%;
+  background:var(--red);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  margin:auto;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+  padding:90px 0;
+  background:#fff;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.card{
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:35px;
+  background:#fff;
+  box-shadow:0 10px 35px rgba(0,0,0,.06);
+}
+
+.card.academy{
+  border-top:5px solid var(--green);
+}
+
+.card.career{
+  border-top:5px solid var(--navy);
+}
+
+.card-icon{
+  width:60px;
+  height:60px;
+  border-radius:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:27px;
+  color:white;
+}
+
+.academy .card-icon{
+  background:var(--green);
+}
+
+.career .card-icon{
+  background:var(--navy);
+}
+
+.card h3{
+  margin-top:25px;
+  font-size:32px;
+  color:var(--navy);
+}
+
+.card p{
+  margin-top:10px;
+  color:var(--muted);
+}
+
+.features{
+  margin:25px 0;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.features div{
+  font-size:14px;
+  font-weight:600;
+}
+
+.features div::before{
+  content:"✓";
+  color:var(--green);
+  font-weight:bold;
+  margin-right:8px;
+}
+
+.card-btn{
+  display:block;
+  text-align:center;
+  padding:13px;
+  border-radius:9px;
+  color:white;
+  font-weight:700;
+}
+
+.academy .card-btn{
+  background:var(--green);
+}
+
+.career .card-btn{
+  background:var(--navy);
+}
+
+
+/* =========================
+   TRUST
+========================= */
+
+.trust{
+  padding:70px 0 90px;
+  background:#fff;
+}
+
+.trust-box{
+  border:1px solid var(--border);
+  border-radius:18px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  padding:25px;
+  box-shadow:0 10px 35px rgba(0,0,0,.05);
+}
+
+.trust-item{
+  text-align:center;
+  border-right:1px solid var(--border);
+}
+
+.trust-item:last-child{
+  border-right:0;
+}
+
+.trust-item strong{
+  display:block;
+  color:var(--navy);
+  font-size:22px;
+}
+
+.trust-item span{
+  color:var(--muted);
+  font-size:13px;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta{
+  margin-top:30px;
+  background:var(--navy);
+  color:white;
+  border-radius:20px;
+  padding:45px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.cta h2{
+  font-size:36px;
+  line-height:1.1;
+}
+
+.cta p{
+  color:#d5dceb;
+  margin-top:8px;
+}
+
+.cta-btn{
+  background:white;
+  color:var(--navy);
+  padding:13px 22px;
+  border-radius:9px;
+  font-weight:800;
+  white-space:nowrap;
+}
+
+
+/* =========================
+   OTHER SECTIONS
+========================= */
+
+.simple-section{
+  padding:80px 0;
+  border-top:1px solid var(--border);
+}
+
+.simple-section h2{
+  color:var(--navy);
+  font-size:36px;
+}
+
+.simple-section p{
+  color:var(--muted);
+  max-width:700px;
+  margin-top:10px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  border-top:1px solid var(--border);
+  padding:35px 0;
+}
+
+.footer-inner{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.footer-brand{
+  color:var(--navy);
+  font-size:18px;
+  font-weight:900;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:900px){
+
+  .nav-links{
+    display:none;
+  }
+
+  .hero{
+    min-height:600px;
+  }
+
+  .hero-bg{
+    background:
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.96),
+      rgba(255,255,255,.60)
+    ),
+    url("hero-japan.jpg");
+
+    background-size:cover;
+    background-position:center;
+  }
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  .trust-box{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .trust-item{
+    padding:15px;
+    border-bottom:1px solid var(--border);
+  }
+
+  .cta{
+    display:block;
+  }
+
+  .cta-btn{
+    display:inline-block;
+    margin-top:22px;
+  }
+}
+
+
+@media(max-width:600px){
+
+  nav{
+    height:68px;
+  }
+
+  .logo{
+    width:145px;
+  }
+
+  .login-btn{
+    padding:9px 14px;
+    font-size:13px;
+  }
+
+  .hero-content{
+    padding:60px 0;
+  }
+
+  .hero h1{
+    font-size:55px;
+    letter-spacing:-3px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .video-section,
+  .services,
+  .trust{
+    padding:65px 0;
+  }
+
+  .section-heading h2{
+    font-size:34px;
+  }
+
+  .card{
+    padding:25px;
+  }
+
+  .features{
+    grid-template-columns:1fr;
+  }
+
+  .trust-box{
+    grid-template-columns:1fr;
+  }
+
+  .trust-item{
+    border-right:0;
+  }
+
+  .cta{
+    padding:30px 25px;
+  }
+
+  .cta h2{
+    font-size:30px;
+  }
+
+  .footer-inner{
+    display:block;
+  }
+}
 </style>
 </head>
+
+
 <body>
 
+<!-- =========================
+     NAVIGATION
+========================= -->
+
 <nav>
-  <div class="container navin">
-    <a class="logo" href="#home">trava<span>work</span></a>
-    <div class="links">
-      <a href="#program">Program</a><a href="#materi">Materi</a><a href="#video">Video</a><a href="#about">Tentang</a>
+  <div class="container nav-inner">
+
+    <a href="#home">
+      <img
+        src="logo-travawork.png"
+        alt="Travawork"
+        class="logo">
+    </a>
+
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#academy">Academy</a>
+      <a href="#career">Career</a>
+      <a href="#blog">Blog</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#contact">Kontak</a>
     </div>
-    <a class="btn" href="#contact">Hubungi</a>
+
+    <a href="#login" class="login-btn">
+      Login
+    </a>
+
   </div>
 </nav>
 
+
 <main id="home">
+
+
+<!-- =========================
+     HERO
+========================= -->
+
 <section class="hero">
-<div class="container">
-  <div class="badge">TRAVAWORK • LEARN & PREPARE</div>
-  <h1>Persiapkan masa depanmu <span>di Jepang.</span></h1>
-  <p>Platform informasi dan pembelajaran Travawork untuk membantu kamu memahami peluang, persiapan, dan langkah menuju dunia kerja di Jepang.</p>
-  <div class="actions">
-    <a class="btn" href="#program">Lihat Program</a>
-    <a class="btn alt" href="#materi">Buka Materi</a>
+
+  <div class="hero-bg"></div>
+
+  <div class="container hero-content">
+
+    <div class="hero-text">
+
+      <div class="eyebrow">
+        YOUR JAPAN JOURNEY STARTS HERE
+      </div>
+
+      <h1>
+        Learn.<br>
+        Work.<br>
+        <span>Travel.</span>
+      </h1>
+
+      <p>
+        Satu platform untuk membantu Anda
+        belajar, mempersiapkan karier,
+        dan mewujudkan perjalanan ke Jepang.
+      </p>
+
+      <a href="#about" class="primary-btn">
+        ▶ &nbsp; Tentang Travawork
+      </a>
+
+    </div>
+
   </div>
-</div>
+
 </section>
 
-<section id="program">
-<div class="container">
-  <div class="section-head"><div class="eyebrow">Program</div><h2>Belajar dengan arah yang jelas.</h2><p>Susun perjalananmu dari mengenal peluang sampai siap mengambil langkah berikutnya.</p></div>
-  <div class="grid">
-    <div class="card"><div class="icon">🇯🇵</div><h3>Kenali Jepang</h3><p>Pelajari informasi dasar tentang kehidupan, budaya, dan lingkungan kerja di Jepang.</p></div>
-    <div class="card"><div class="icon">📚</div><h3>Persiapan</h3><p>Akses materi pembelajaran yang membantu kamu mempersiapkan diri sebelum bekerja.</p></div>
-    <div class="card"><div class="icon">🚀</div><h3>Take the Next Step</h3><p>Gunakan informasi dan materi yang tersedia untuk menentukan langkahmu selanjutnya.</p></div>
+
+<!-- =========================
+     VIDEO TRAVAWORK
+========================= -->
+
+<section class="video-section">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">
+        ABOUT TRAVAWORK
+      </div>
+
+      <h2>
+        Kenali Travawork.
+      </h2>
+
+      <p>
+        Kenali Travawork dan bagaimana kami
+        membantu kamu mempersiapkan langkah
+        menuju Jepang.
+      </p>
+
+    </div>
+
+
+    <div class="video-container">
+
+      <video controls playsinline>
+
+        <source
+          src="travawork-video.mp4"
+          type="video/mp4">
+
+        Browser Anda tidak mendukung video.
+
+      </video>
+
+      <div class="video-placeholder">
+
+        <div>
+
+          <div class="play-button">
+            ▶
+          </div>
+
+          <p style="margin-top:15px">
+            Video Travawork
+          </p>
+
+          <small>
+            Tambahkan travawork-video.mp4
+          </small>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
-</div>
+
 </section>
 
-<section id="materi">
-<div class="container">
-  <div class="section-head"><div class="eyebrow">Materi</div><h2>Materi pembelajaran</h2><p>Bagian ini bisa kamu isi dengan modul PDF, ebook, dokumen, atau materi lainnya.</p></div>
-  <div class="card material">
-    <div class="info"><div class="tag">Modul 01</div><h3>Persiapan Bekerja di Jepang</h3><p>Ganti deskripsi ini dengan informasi materi kamu.</p></div>
-    <a class="btn" href="https://drive.google.com/" target="_blank">📄 Buka PDF</a>
+
+<!-- =========================
+     ACADEMY & CAREER
+========================= -->
+
+<section class="services">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">
+        LEARN & WORK
+      </div>
+
+      <h2>
+        Mulai dari belajar,
+        lanjut ke karier.
+      </h2>
+
+      <p>
+        Travawork menghubungkan proses belajar
+        dengan persiapan karier menuju Jepang.
+      </p>
+
+    </div>
+
+
+    <div class="cards">
+
+
+      <!-- ACADEMY -->
+
+      <article
+        class="card academy"
+        id="academy">
+
+        <div class="card-icon">
+          🎓
+        </div>
+
+        <h3>
+          Travawork Academy
+        </h3>
+
+        <p>
+          Belajar bahasa Jepang dan
+          persiapan kerja secara online
+          dengan materi yang terstruktur.
+        </p>
+
+
+        <div class="features">
+
+          <div>JLPT</div>
+          <div>JFT</div>
+
+          <div>SSW</div>
+          <div>Video</div>
+
+          <div>Materi PDF</div>
+          <div>Latihan</div>
+
+          <div>Dashboard</div>
+          <div>Simulasi</div>
+
+        </div>
+
+
+        <a href="#" class="card-btn">
+          Mulai Belajar →
+        </a>
+
+      </article>
+
+
+      <!-- CAREER -->
+
+      <article
+        class="card career"
+        id="career">
+
+        <div class="card-icon">
+          💼
+        </div>
+
+        <h3>
+          Travawork Career
+        </h3>
+
+        <p>
+          Persiapkan langkah kariermu
+          dengan informasi dan panduan
+          yang lebih terarah.
+        </p>
+
+
+        <div class="features">
+
+          <div>Informasi Karier</div>
+          <div>CV Jepang</div>
+
+          <div>Career Guidance</div>
+          <div>Lowongan</div>
+
+          <div>Konsultasi</div>
+          <div>Interview</div>
+
+        </div>
+
+
+        <a href="#" class="card-btn">
+          Lihat Career →
+        </a>
+
+      </article>
+
+
+    </div>
+
   </div>
-  <br>
-  <div class="card material">
-    <div class="info"><div class="tag">Modul 02</div><h3>Bahasa Jepang untuk Pemula</h3><p>Tambahkan modul PDF berikutnya di bagian ini.</p></div>
-    <a class="btn" href="https://drive.google.com/" target="_blank">📄 Buka PDF</a>
-  </div>
-</div>
+
 </section>
 
-<section id="video">
-<div class="container">
-  <div class="section-head"><div class="eyebrow">Video</div><h2>Video pembelajaran</h2><p>Video dapat di-embed dari YouTube tanpa perlu membayar hosting video.</p></div>
-  <div class="grid">
-    <div class="video"><div class="video-box"><div class="play">▶</div></div><div class="video-info"><h3>Video Pembelajaran 01</h3><p>Ganti area ini dengan video YouTube kamu.</p></div></div>
-    <div class="video"><div class="video-box"><div class="play">▶</div></div><div class="video-info"><h3>Video Pembelajaran 02</h3><p>Tambahkan video lainnya sesuai program.</p></div></div>
-    <div class="video"><div class="video-box"><div class="play">▶</div></div><div class="video-info"><h3>Video Pembelajaran 03</h3><p>Materi video berikutnya bisa ditambahkan.</p></div></div>
+
+<!-- =========================
+     TRUST / CTA
+========================= -->
+
+<section class="trust">
+
+  <div class="container">
+
+
+    <div class="trust-box">
+
+      <div class="trust-item">
+        <strong>Academy</strong>
+        <span>Learning Platform</span>
+      </div>
+
+      <div class="trust-item">
+        <strong>Career</strong>
+        <span>Japan Focused</span>
+      </div>
+
+      <div class="trust-item">
+        <strong>Terarah</strong>
+        <span>Structured Learning</span>
+      </div>
+
+      <div class="trust-item">
+        <strong>Terpercaya</strong>
+        <span>Aman & Transparan</span>
+      </div>
+
+    </div>
+
+
+    <div class="cta">
+
+      <div>
+
+        <div class="eyebrow"
+             style="color:#ff9da5">
+          START YOUR JOURNEY
+        </div>
+
+        <h2>
+          Siap mulai perjalananmu
+          ke Jepang?
+        </h2>
+
+        <p>
+          Mulai dari Academy,
+          lalu persiapkan langkah
+          kariermu bersama Travawork.
+        </p>
+
+      </div>
+
+
+      <a
+        href="#academy"
+        class="cta-btn">
+
+        Mulai Sekarang →
+
+      </a>
+
+    </div>
+
   </div>
-</div>
+
 </section>
 
-<section id="about">
-<div class="container about">
-  <div>
-    <div class="eyebrow">Tentang Travawork</div>
-    <h2>Informasi yang membantu kamu bergerak lebih siap.</h2>
-    <p style="color:var(--muted);margin-top:15px">Travawork dirancang sebagai ruang informasi dan pembelajaran yang praktis, sederhana, dan mudah diakses untuk siapa saja yang ingin mempersiapkan diri menuju peluang di Jepang.</p>
+
+<!-- =========================
+     BLOG
+========================= -->
+
+<section
+  class="simple-section"
+  id="blog">
+
+  <div class="container">
+
+    <div class="eyebrow">
+      BLOG
+    </div>
+
+    <h2>
+      Konten Jepang
+    </h2>
+
+    <p>
+      Fakta Jepang, bahasa Jepang,
+      budaya, kehidupan, karier,
+      dan informasi seputar Jepang.
+    </p>
+
   </div>
-  <div class="aboutbox">
-    <h3>TRAVAWORK</h3>
-    <p style="color:var(--muted);margin-top:8px">Learn. Prepare. Work.</p>
-    <div class="stats"><div class="stat"><strong>01</strong><small>Platform</small></div><div class="stat"><strong>24/7</strong><small>Akses materi</small></div></div>
-  </div>
-</div>
+
 </section>
 
-<section id="contact">
-<div class="container">
-  <div class="contact">
-    <div class="eyebrow">Contact</div><h2>Siap mulai?</h2>
-    <p>Hubungi Travawork untuk mendapatkan informasi lebih lanjut mengenai program dan materi yang tersedia.</p>
-    <a class="btn" href="https://wa.me/6280000000000" target="_blank">💬 WhatsApp Travawork</a>
+
+<!-- =========================
+     TENTANG KAMI
+========================= -->
+
+<section
+  class="simple-section"
+  id="about">
+
+  <div class="container">
+
+    <div class="eyebrow">
+      ABOUT US
+    </div>
+
+    <h2>
+      Tentang Travawork
+    </h2>
+
+    <p>
+      Travawork hadir untuk membantu
+      masyarakat Indonesia mempersiapkan
+      diri menuju Jepang melalui pembelajaran
+      dan persiapan karier.
+    </p>
+
   </div>
-</div>
+
 </section>
+
+
+<!-- =========================
+     KONTAK
+========================= -->
+
+<section
+  class="simple-section"
+  id="contact">
+
+  <div class="container">
+
+    <div class="eyebrow">
+      CONTACT
+    </div>
+
+    <h2>
+      Kontak Travawork
+    </h2>
+
+    <p>
+      Hubungi Travawork untuk informasi
+      Academy, Career, dan kebutuhan lainnya.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     LOGIN
+========================= -->
+
+<section
+  class="simple-section"
+  id="login">
+
+  <div class="container">
+
+    <div class="eyebrow">
+      MEMBER AREA
+    </div>
+
+    <h2>
+      Login Academy
+    </h2>
+
+    <p>
+      Gunakan email dan password
+      yang diberikan setelah membeli
+      paket Academy.
+    </p>
+
+  </div>
+
+</section>
+
+
 </main>
 
-<footer><div class="container">© 2026 Travawork. All rights reserved.</div></footer>
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <div>
+
+      <div class="footer-brand">
+        TRAVAWORK
+      </div>
+
+      <span>
+        Learn. Work. Travel.
+      </span>
+
+    </div>
+
+    <div>
+      © 2026 Travawork.
+      All rights reserved.
+    </div>
+
+  </div>
+
+</footer>
+
+
 </body>
-</html>
+        </html>
