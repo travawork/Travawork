@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Saya - Trava Work</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #172033; background-color: #f8fafc; }
+        
+        header { background: #071d45; color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #38bdf8; text-decoration: none; }
+        .user-nav a { color: #ffffff; text-decoration: none; font-size: 0.9rem; background: #c91424; padding: 0.4rem 0.8rem; border-radius: 4px; font-weight: bold; }
+        
+        .dashboard-container { padding: 2rem 1.5rem; max-width: 1000px; margin: 0 auto; }
+        .welcome-card { background: linear-gradient(135deg, #071d45, #12356d); color: white; padding: 2rem; border-radius: 8px; margin-bottom: 2rem; }
+        .welcome-card h2 { color: #38bdf8; margin-bottom: 0.5rem; }
+        
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .panel-card { background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+        .panel-card h3 { color: #071d45; margin-bottom: 1rem; border-bottom: 2px solid #f1f5f9; padding-bottom: 0.5rem; }
+        
+        .course-list-item { display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 0; border-bottom: 1px solid #f1f5f9; }
+        .badge-active { background: #087653; color: white; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.75rem; font-weight: bold; }
+        
+        .btn-study { display: inline-block; background: #38bdf8; color: #071d45; text-decoration: none; padding: 0.4rem 0.8rem; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-top: 0.5rem; }
+
+        footer { text-align: center; padding: 1.5rem; background: #071d45; color: #cbd5e1; font-size: 0.85rem; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html" class="logo">Trava Work</a>
+        <div class="user-nav">
+            <a href="../pages/login.html">Keluar (Logout)</a>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <div class="welcome-card">
+            <h2>Selamat Datang di Panel Member!</h2>
+            <p>Akses materi pembelajaran, status pendaftaran karir, dan jadwal dokumen Anda dari sini.</p>
+        </div>
+
+        <div class="grid-2">
+            <div class="panel-card">
+                <h3>Kelas & Kursus Saya</h3>
+                <div class="course-list-item">
+                    <div>
+                        <strong>Kelas Pro (N4 + Skill)</strong>
+                        <div style="font-size: 0.85rem; color: #667085;">Progres: 25% Selesai</div>
+                    </div>
+                    <span class="badge-active">Aktif</span>
+                </div>
+                <a href="../pages/academy/pro.html" class="btn-study">Lanjutkan Belajar &rarr;</a>
+            </div>
+
+            <div class="panel-card">
+                <h3>Status Lamaran Karir</h3>
+                <div class="course-list-item">
+                    <div>
+                        <strong>Careworker / Kaigo</strong>
+                        <div style="font-size: 0.85rem; color: #667085;">Tokyo, Jepang</div>
+                    </div>
+                    <span style="background: #e0f2fe; color: #0369a1; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.75rem; font-weight: bold;">Review Dokumen</span>
+                </div>
+                <a href="../pages/contact.html" class="btn-study" style="background: #071d45; color: white;">Hubungi Admin</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Trava Work Member Area. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
 
