@@ -9,36 +9,29 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         body { font-family: 'Inter', sans-serif; }
-        .hero-bg {
-            background-image: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(255,255,255,0.9)), url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1920&auto=format&fit=crop');
-            background-size: cover;
-            background-position: center;
-        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
+    <!-- NAVBAR -->
     <nav class="bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
-                <a href="../index.html" class="flex items-center gap-2">
+                <a href="/Travawork/index.html" class="flex items-center gap-2">
                     <div class="w-10 h-10 bg-red-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">TW</div>
                     <span class="text-2xl font-extrabold text-red-600 tracking-tight">Travawork</span>
                 </a>
-
                 <div class="hidden md:flex items-center space-x-8 font-medium text-sm">
-                    <a href="../index.html" class="text-gray-600 hover:text-red-600 transition">Home</a>
-                    <a href="./travel.html" class="text-gray-600 hover:text-red-600 transition flex items-center gap-1">
-                        Travel
-                        <span class="text-[10px] bg-red-100 text-red-600 px-1.5 py-0.5 rounded font-bold border border-red-200">Coming Soon</span>
+                    <a href="/Travawork/index.html" class="text-gray-600 hover:text-red-600 transition">Home</a>
+                    <a href="/Travawork/pages/travel.html" class="text-gray-600 hover:text-red-600 transition flex items-center gap-1">
+                        Travel <span class="text-[10px] bg-red-100 text-red-600 px-1.5 py-0.5 rounded font-bold border border-red-200">Coming Soon</span>
                     </a>
-                    <a href="./career.html" class="text-gray-600 hover:text-red-600 transition">Career</a>
-                    <a href="./academy.html" class="text-red-600 border-b-2 border-red-600 pb-1">Academy</a>
+                    <a href="/Travawork/pages/career.html" class="text-gray-600 hover:text-red-600 transition">Career</a>
+                    <a href="/Travawork/pages/academy.html" class="text-emerald-600 font-bold border-b-2 border-emerald-600 pb-1">Academy</a>
                     <a href="#" class="text-gray-600 hover:text-red-600 transition">Blog</a>
                     <a href="#" class="text-gray-600 hover:text-red-600 transition">Tentang Kami</a>
                     <a href="#" class="text-gray-600 hover:text-red-600 transition">Kontak</a>
                 </div>
-
                 <button class="bg-[#0b192c] hover:bg-slate-800 text-white px-5 py-2.5 rounded-lg text-sm font-semibold flex items-center gap-2 transition">
                     <i data-lucide="user" class="w-4 h-4"></i> Login
                 </button>
@@ -46,84 +39,59 @@
         </div>
     </nav>
 
-    <div class="hero-bg py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
-            <span class="text-xs font-bold text-red-600 uppercase tracking-wider">TRAVAWORK ACADEMY</span>
-            <h1 class="text-4xl font-black text-gray-900 leading-tight">
-                Belajar Hari Ini, <br>Siap untuk <br><span class="text-red-600">Masa Depanmu di Jepang.</span>
-            </h1>
-            <p class="text-sm text-gray-600 max-w-xl">
-                Pilih paket yang sesuai dengan tujuanmu dan mulai perjalanan belajarmu sekarang.
+    <!-- HERO SECTION ACADEMY -->
+    <div class="bg-gradient-to-r from-emerald-900 via-emerald-800 to-teal-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-emerald-500/20 border border-emerald-400/30 rounded-full text-emerald-300 text-xs font-semibold mb-4">
+                <i data-lucide="graduation-cap" class="w-4 h-4"></i> Travawork Academy
+            </div>
+            <h1 class="text-4xl sm:text-5xl font-black mb-4 tracking-tight">Kuasai Bahasa & Skill Kerja Jepang</h1>
+            <p class="text-emerald-100 text-base sm:text-lg max-w-2xl mx-auto">
+                Persiapkan dirimu menghadapi ujian JLPT (N5–N1) dan tes kelulusan SSW (Tokutei Ginou) dengan modul terstruktur dan latihan ujian interaktif.
             </p>
         </div>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-8">
-        <div class="text-center mb-8">
-            <div class="flex items-center justify-center gap-2 mb-1">
-                <span class="h-0.5 w-8 bg-red-600"></span>
-                <h2 class="text-xl font-extrabold text-gray-900">Pilih Paket Academy</h2>
-                <span class="h-0.5 w-8 bg-red-600"></span>
-            </div>
-            <p class="text-xs text-gray-500">Semakin lengkap, semakin siap untuk masa depanmu di Jepang.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-            <!-- Basic -->
-            <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col justify-between">
-                <div>
-                    <div class="w-10 h-10 bg-slate-900 text-white rounded-xl flex items-center justify-center mb-4"><i data-lucide="send"></i></div>
-                    <h3 class="text-xl font-black text-gray-900">BASIC</h3>
-                    <p class="text-xs text-gray-400 mb-6">Dasar yang kuat untuk memulai.</p>
-                    <div class="bg-gray-50 p-4 rounded-xl mb-6 space-y-2">
-                        <h4 class="text-xs font-bold text-gray-700">Materi yang Didapatkan</h4>
-                        <div class="text-xs text-gray-600 space-y-1">
-                            <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> JLPT N5 & N4</div>
-                        </div>
-                    </div>
+    <!-- FEATURE PROGRAM -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-4">
+                    <i data-lucide="book-open" class="w-6 h-6"></i>
                 </div>
-                <div>
-                    <div class="text-2xl font-black text-gray-900 mb-4">Rp499.000</div>
-                    <button class="w-full py-2.5 bg-[#0b192c] text-white text-xs font-bold rounded-lg">Pilih Paket Basic</button>
-                </div>
+                <h3 class="font-bold text-gray-900 text-lg mb-2">Persiapan JLPT</h3>
+                <p class="text-xs text-gray-500 leading-relaxed mb-4">Materi lengkap dari tata bahasa, kosakata, kanji, hingga choukai (listening) dari level N5 hingga N1.</p>
+                <span class="text-xs font-bold text-emerald-600 flex items-center gap-1">Pelajari Modul <i data-lucide="chevron-right" class="w-4 h-4"></i></span>
             </div>
 
-            <!-- Pro -->
-            <div class="bg-white rounded-2xl p-6 border border-emerald-500 shadow-sm flex flex-col justify-between">
-                <div>
-                    <div class="w-10 h-10 bg-emerald-600 text-white rounded-xl flex items-center justify-center mb-4"><i data-lucide="rocket"></i></div>
-                    <h3 class="text-xl font-black text-emerald-600">PRO</h3>
-                    <p class="text-xs text-gray-400 mb-6">Persiapan lebih lengkap & terarah.</p>
-                    <div class="bg-emerald-50/50 p-4 rounded-xl mb-6 space-y-2">
-                        <h4 class="text-xs font-bold text-gray-700">SSW (5 Bidang)</h4>
-                        <div class="text-xs text-gray-600 space-y-1">
-                            <div class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Kaigo, Nōgyō, Konstruksi, Dll</div>
-                        </div>
-                    </div>
+            <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-4">
+                    <i data-lucide="award" class="w-6 h-6"></i>
                 </div>
-                <div>
-                    <div class="text-2xl font-black text-emerald-600 mb-4">Rp799.000</div>
-                    <button class="w-full py-2.5 bg-emerald-600 text-white text-xs font-bold rounded-lg">Pilih Paket Pro</button>
-                </div>
+                <h3 class="font-bold text-gray-900 text-lg mb-2">Materi SSW 19 Bidang</h3>
+                <p class="text-xs text-gray-500 leading-relaxed mb-4">Modul keahlian khusus seperti Kaigo (Caregiver), Pengolahan Makanan, Pertanian, dan bidang lainnya.</p>
+                <span class="text-xs font-bold text-emerald-600 flex items-center gap-1">Lihat Bidang <i data-lucide="chevron-right" class="w-4 h-4"></i></span>
             </div>
 
-            <!-- Premium -->
-            <div class="bg-white rounded-2xl p-6 border border-amber-500 shadow-md flex flex-col justify-between relative">
-                <span class="absolute top-4 right-4 bg-red-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Best Value</span>
-                <div>
-                    <div class="w-10 h-10 bg-amber-500 text-white rounded-xl flex items-center justify-center mb-4"><i data-lucide="crown"></i></div>
-                    <h3 class="text-xl font-black text-amber-600">PREMIUM</h3>
-                    <p class="text-xs text-gray-400 mb-6">Lengkap, eksklusif & siap berkarier.</p>
-                    <div class="bg-amber-50/50 p-4 rounded-xl mb-6 space-y-2">
-                        <h4 class="text-xs font-bold text-amber-900">Career Guide Eksklusif</h4>
-                        <p class="text-[11px] text-amber-700">Akses penuh fitur lock Career Guide, Q&A, dan prioritas support.</p>
-                    </div>
+            <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-4">
+                    <i data-lucide="video" class="w-6 h-6"></i>
                 </div>
-                <div>
-                    <div class="text-2xl font-black text-amber-600 mb-4">Rp999.999</div>
-                    <button class="w-full py-2.5 bg-amber-600 text-white text-xs font-bold rounded-lg">Pilih Paket Premium</button>
-                </div>
+                <h3 class="font-bold text-gray-900 text-lg mb-2">Video & PDF Belajar</h3>
+                <p class="text-xs text-gray-500 leading-relaxed mb-4">Akses video penjelasan dari Sensei berpengalaman dan file PDF ringkasan yang dapat diunduh.</p>
+                <span class="text-xs font-bold text-emerald-600 flex items-center gap-1">Akses Materi <i data-lucide="chevron-right" class="w-4 h-4"></i></span>
             </div>
+
+            <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-4">
+                    <i data-lucide="file-check" class="w-6 h-6"></i>
+                </div>
+                <h3 class="font-bold text-gray-900 text-lg mb-2">Try Out & Simulasi</h3>
+                <p class="text-xs text-gray-500 leading-relaxed mb-4">Uji kemampuanmu dengan sistem Try Out online sesuai standar ujian bahasa Jepang sebenarnya.</p>
+                <span class="text-xs font-bold text-emerald-600 flex items-center gap-1">Mulai Latihan <i data-lucide="chevron-right" class="w-4 h-4"></i></span>
+            </div>
+
         </div>
     </div>
 
