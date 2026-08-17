@@ -1,1 +1,6 @@
+/* Placeholder untuk komponen tambahan unik Travawork */
+.badge-tag, .badge-pricing {
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
 
