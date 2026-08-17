@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran Paket • TRAVAWORK | Rp999.000</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/member.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container navbar-container">
+            <a href="../index.html" class="logo">
+                TRAVAWORK <span class="badge-tag">PAYMENT</span>
+            </a>
+            <nav class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="academy.html" class="nav-link">Academy</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="payment-section">
+        <div class="container">
+            <div class="payment-grid">
+                
+                <!-- DETAIL PAKET -->
+                <div class="card payment-summary">
+                    <span class="badge-pricing">PAKET INTEGRASI UTAMA</span>
+                    <h2>JLPT N5–N3 + SSW 1 + Career Guide</h2>
+                    <p>Akses selamanya ke seluruh ekosistem pembelajaran Travawork.</p>
+                    
+                    <div class="price-tag-large">
+                        <span class="currency">Rp</span>
+                        <span class="amount">999.000</span>
+                    </div>
+
+                    <div class="payment-benefits">
+                        <p>✓ LMS Bahasa Jepang (JLPT N5, N4, N3)</p>
+                        <p>✓ LMS Keterampilan SSW 1 (8 Sektor Utama)</p>
+                        <p>✓ Modul Bimbingan Career Guide & Templat Resume</p>
+                        <p>✓ Dokumen PDF, Video, & Progress Belajar</p>
+                    </div>
+                </div>
+
+                <!-- FORM PEMBAYARAN -->
+                <div class="card payment-form-card">
+                    <h3>Formulir Pendaftaran Member</h3>
+                    <p>Isi data diri untuk melanjutkan ke proses aktivasi akun.</p>
+
+                    <div class="prototype-warning">
+                        <strong>FRONT-END PLACEHOLDER:</strong><br>
+                        Sistem pembayaran ini menggunakan integrasi placeholder aman. Jangan memasukkan Kunci Rahasia / Payment credentials sungguhan ke dalam kode front-end di repository GitHub.
+                    </div>
+
+                    <form id="paymentForm" onsubmit="handlePaymentSubmit(event)">
+                        <div class="form-group">
+                            <label for="fullname">Nama Lengkap</label>
+                            <input type="text" id="fullname" class="form-input" placeholder="Masukkan nama lengkap" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="payEmail">Alamat Email</label>
+                            <input type="email" id="payEmail" class="form-input" placeholder="nama@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Nomor WhatsApp</label>
+                            <input type="tel" id="phone" class="form-input" placeholder="081234567890" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Metode Pembayaran (Simulasi)</label>
+                            <select class="form-input" id="paymentMethod">
+                                <option value="qris">QRIS / E-Wallet</option>
+                                <option value="va">Virtual Account Bank</option>
+                                <option value="manual">Konfirmasi Manual</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full btn-large">Bayar Rp999.000Sekarang</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-bottom" style="border:none;">
+            <p>&copy; 2026 TRAVAWORK. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/payment.js"></script>
+</body>
+</html>
