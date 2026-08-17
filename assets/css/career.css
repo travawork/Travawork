@@ -1,0 +1,174 @@
+/* ==========================================================================
+   TRAVAWORK CAREER GUIDE STYLESHEET
+   Wajib disimpan di: assets/css/career.css
+   ========================================================================== */
+
+.career-hero {
+    background-color: var(--bg-alt);
+    padding: 60px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.career-hero-content {
+    max-width: 800px;
+}
+
+.career-hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.career-hero-content h1 span {
+    color: var(--accent-red);
+}
+
+.career-hero-content p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 25px;
+}
+
+/* Subnav Cards */
+.career-subnav-section {
+    padding: 30px 0;
+    background: #FFFFFF;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.career-nav-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.career-nav-card {
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background: #FFFFFF;
+    transition: all 0.2s ease;
+}
+
+.career-nav-card:hover, .career-nav-card.active-card {
+    border-color: var(--accent-red);
+    box-shadow: 0 4px 12px rgba(214, 0, 28, 0.08);
+}
+
+.career-nav-card h4 {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    margin-bottom: 5px;
+}
+
+.career-nav-card p {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+/* Modules Section */
+.career-modules {
+    padding: 60px 0;
+}
+
+.career-module-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.module-number {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--accent-red);
+    margin-bottom: 10px;
+}
+
+.career-module-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.career-module-card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.link-arrow {
+    margin-top: auto;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--accent-red);
+}
+
+.link-arrow:hover {
+    text-decoration: underline;
+}
+
+/* Detail Guides & LMS Preview */
+.page-header {
+    background: #111111;
+    color: #FFFFFF;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: #AAAAAA;
+}
+
+.career-content {
+    padding: 60px 0;
+}
+
+.lesson-box {
+    margin-top: 20px;
+    background: var(--bg-alt);
+}
+
+.lesson-box ul, .lesson-box ol {
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.lesson-box li {
+    margin-bottom: 10px;
+}
+
+.placeholder-notice {
+    margin-top: 20px;
+    padding: 10px;
+    background: #FFF3F3;
+    border-left: 3px solid var(--accent-red);
+    color: var(--accent-red);
+    font-size: 0.85rem;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 992px) {
+    .career-nav-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .career-nav-cards {
+        grid-template-columns: 1fr;
+    }
+}
