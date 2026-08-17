@@ -4,17 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travawork - Akademi Persiapan Karir & Kerja di Jepang</title>
-  <!-- Google Fonts: Inter & Noto Serif JP -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <style>
     :root {
       --bg-dark: #0a0b0d;
       --bg-card: #12141a;
-      --bg-card-hover: #1a1d26;
-      --accent-red: #bc002d; /* Crimson Red khas Bendera Jepang */
+      --accent-red: #bc002d;
       --accent-red-hover: #e60033;
       --text-main: #f3f4f6;
       --text-muted: #9ca3af;
@@ -26,6 +25,10 @@
       margin: 0;
       padding: 0;
       font-family: 'Inter', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -41,7 +44,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 18px 8%;
-      background: rgba(10, 11, 13, 0.85);
+      background: rgba(10, 11, 13, 0.9);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border-color);
       position: sticky;
@@ -91,7 +94,7 @@
       transform: translateY(-1px);
     }
 
-    /* Hero Section dengan Nuansa Jepang Premium */
+    /* Hero Section */
     .hero {
       position: relative;
       padding: 120px 20px 100px;
@@ -111,7 +114,6 @@
       object-fit: cover;
       opacity: 0.35;
       z-index: 0;
-      filter: saturate(1.2);
     }
     .hero-overlay {
       position: absolute;
@@ -146,7 +148,6 @@
       font-weight: 800;
       line-height: 1.25;
       margin-bottom: 20px;
-      letter-spacing: -0.5px;
     }
     .hero p {
       color: var(--text-muted);
@@ -163,7 +164,7 @@
       flex-wrap: wrap;
     }
 
-    /* Stats Counter Section */
+    /* Stats Section */
     .stats-section {
       background: var(--bg-card);
       padding: 40px 20px;
@@ -187,10 +188,9 @@
     .stat-item p {
       color: var(--text-muted);
       font-size: 0.85rem;
-      font-weight: 500;
     }
 
-    /* Section Intro & Video Showcase */
+    /* Intro & Video Showcase */
     .intro-section {
       padding: 90px 20px;
       max-width: 950px;
@@ -201,7 +201,6 @@
       font-size: 2.2rem;
       font-weight: 800;
       margin-bottom: 12px;
-      letter-spacing: -0.5px;
     }
     .section-desc {
       color: var(--text-muted);
@@ -217,18 +216,13 @@
       overflow: hidden;
       border: 1px solid var(--border-color);
       box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-      transition: transform 0.3s;
-    }
-    .video-wrapper:hover {
-      transform: scale(1.01);
     }
     .video-wrapper img {
       width: 100%;
-      height: auto;
       display: block;
     }
 
-    /* Package Section Card (3D Offer) */
+    /* Package Section */
     .package-section {
       padding: 60px 20px 90px;
       max-width: 950px;
@@ -245,7 +239,6 @@
       flex-wrap: wrap;
       border: 1px solid rgba(188, 0, 45, 0.3);
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-      position: relative;
     }
     .package-info {
       flex: 1;
@@ -270,13 +263,8 @@
       color: var(--text-muted);
       font-size: 0.95rem;
     }
-    .package-grid div {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
     .package-grid div::before {
-      content: "✔";
+      content: "✔ ";
       color: var(--accent-red);
       font-weight: bold;
     }
@@ -291,7 +279,7 @@
       filter: drop-shadow(0 15px 20px rgba(0,0,0,0.7));
     }
 
-    /* Programs Grid Cards */
+    /* Programs Section */
     .programs-section {
       padding: 80px 20px 100px;
       max-width: 1100px;
@@ -315,7 +303,6 @@
     .card:hover {
       transform: translateY(-6px);
       border-color: rgba(188, 0, 45, 0.5);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.5);
     }
     .card img {
       width: 100%;
@@ -333,7 +320,6 @@
     .card-body p {
       color: var(--text-muted);
       font-size: 0.9rem;
-      line-height: 1.5;
     }
 
     @media (max-width: 768px) {
@@ -347,16 +333,15 @@
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <a href="#" class="logo">travawork<span>.</span></a>
+    <a href="index.html" class="logo">travawork<span>.</span></a>
     <div class="nav-btns">
-      <a href="#" class="btn-login">Masuk</a>
-      <a href="#" class="btn-register">Gabung Sekarang</a>
+      <a href="login.html" class="btn-login">Masuk</a>
+      <a href="register.html" class="btn-register">Gabung Sekarang</a>
     </div>
   </nav>
 
-  <!-- HERO SECTION (JAPANESE LANDSCAPE AMBIENCE) -->
+  <!-- HERO SECTION -->
   <section class="hero">
-    <!-- Gambar Hero: Pagoda Chureito & Gunung Fuji -->
     <img src="assets/images/hero-japan.jpg" 
          onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1600&q=80';" 
          class="hero-bg" 
@@ -367,13 +352,13 @@
       <h1>Siap Kerja & Berkarier Profesional di Jepang?</h1>
       <p>Kuasai bahasa Jepang dari dasar, persiapkan dokumen resmi, dan raih sertifikasi kerja Tokutei Ginou bersama bimbingan ahli.</p>
       <div class="hero-btns">
-        <a href="#" class="btn-register" style="padding: 14px 28px; font-size: 1rem;">Mulai Belajar Sekarang</a>
-        <a href="#" class="btn-login" style="border: 1px solid var(--border-color); padding: 14px 28px; font-size: 1rem;">Lihat Program</a>
+        <a href="register.html" class="btn-register" style="padding: 14px 28px; font-size: 1rem;">Mulai Belajar Sekarang</a>
+        <a href="#program-utama" class="btn-login" style="border: 1px solid var(--border-color); padding: 14px 28px; font-size: 1rem;">Lihat Program</a>
       </div>
     </div>
   </section>
 
-  <!-- STATISTIK ANGKA PERTUMBUHAN -->
+  <!-- STATISTIK ANGKA -->
   <section class="stats-section">
     <div class="stats-grid">
       <div class="stat-item">
@@ -405,7 +390,6 @@
     <p class="section-desc">Kurikulum terstruktur sesuai standar industri Jepang, dilengkapi modul interaktif dan bimbingan simulasi wawancara langsung.</p>
     
     <div class="video-wrapper">
-      <!-- Gambar Video Cover: Pemandangan Kota Tokyo Malam Hari -->
       <img src="assets/images/video-cover.jpg" 
            onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80';" 
            alt="Tokyo Night Skyline - Intro Video">
@@ -416,7 +400,7 @@
   <section class="package-section">
     <div class="package-card">
       <div class="package-info">
-        <div class="hero-tag">PENWARAN TERBAIK</div>
+        <div class="hero-tag">PENAWARAN TERBAIK</div>
         <div class="package-title">JLPT N5–N3 + SSW 1 + Career Guide</div>
         <div class="package-price">Rp999.000</div>
         
@@ -429,11 +413,10 @@
           <div>Konsultasi Penyaluran Kerja</div>
         </div>
 
-        <a href="#" class="btn-register" style="display:inline-block; padding: 12px 30px;">Dapatkan Paket Lengkap</a>
+        <a href="register.html" class="btn-register" style="display:inline-block; padding: 12px 30px;">Dapatkan Paket Lengkap</a>
       </div>
 
       <div class="package-image">
-        <!-- Gambar Mockup Product Box -->
         <img src="assets/images/package-box.png" 
              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80';" 
              alt="Travawork Package Box">
@@ -442,13 +425,13 @@
   </section>
 
   <!-- PROGRAM UTAMA MODUL -->
-  <section class="programs-section">
+  <section id="program-utama" class="programs-section">
     <h2 class="section-title">Program Utama Kami</h2>
     <p class="section-desc">Pilih jalur pelatihan yang sesuai dengan target karirmu di Jepang.</p>
     
     <div class="program-cards">
       
-      <!-- Program 1: JLPT (Gambar Kelas Bahasa / Kanji) -->
+      <!-- Program 1 -->
       <div class="card">
         <img src="assets/images/program-jlpt.jpg" 
              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1528164344705-47542687990d?auto=format&fit=crop&w=600&q=80';" 
@@ -459,7 +442,7 @@
         </div>
       </div>
 
-      <!-- Program 2: SSW (Gambar Industri / Kerja Profesional) -->
+      <!-- Program 2 -->
       <div class="card">
         <img src="assets/images/program-ssw.jpg" 
              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80';" 
@@ -470,7 +453,7 @@
         </div>
       </div>
 
-      <!-- Program 3: Career Guide (Gambar Bisnis / Office Tokyo) -->
+      <!-- Program 3 -->
       <div class="card">
         <img src="assets/images/program-career.jpg" 
              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80';" 
