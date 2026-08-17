@@ -5,161 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TRAVAWORK • Platform Belajar & Persiapan Karier Jepang</title>
     <!-- CSS Utama & Komponen -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Standar Dasar Tampilan */
+        body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; color: #222222; background: #ffffff; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid #eee; }
+        .logo { font-weight: 800; font-size: 1.2rem; text-decoration: none; color: #111; }
+        .badge-tag { background: #E63946; color: #fff; font-size: 0.7rem; padding: 3px 8px; border-radius: 4px; font-weight: 700; }
+        .nav-menu a { margin: 0 10px; text-decoration: none; color: #555; font-size: 0.9rem; font-weight: 600; }
+        .hero { padding: 60px 0; }
+        .btn { display: inline-block; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 0.9rem; }
+        .btn-primary { background: #E63946; color: #fff; }
+        .btn-outline { border: 1px solid #111; color: #111; margin-left: 10px; }
+    </style>
 </head>
 <body>
 
     <!-- NAVBAR HEADER -->
-    <header class="navbar">
-        <div class="container navbar-container">
-            <a href="index.html" class="logo">
-                TRAVAWORK <span class="badge-tag">JAPAN CAREER</span>
-            </a>
-            <nav class="nav-menu">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="pages/academy.html" class="nav-link">Academy</a>
-                <a href="pages/ssw.html" class="nav-link">SSW 1</a>
-                <a href="pages/career.html" class="nav-link">Career Guide</a>
-                <a href="pages/about.html" class="nav-link">Tentang Kami</a>
-            </nav>
-            <div class="nav-auth">
-                <a href="pages/login.html" class="btn btn-outline">Masuk Member</a>
-                <a href="pages/payment.html" class="btn btn-primary">Daftar Sekarang</a>
-            </div>
+    <header class="navbar container">
+        <a href="index.html" class="logo">
+            TRAVAWORK <span class="badge-tag">JAPAN CAREER</span>
+        </a>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="pages/academy.html" class="nav-link">Academy</a>
+            <a href="pages/ssw.html" class="nav-link">SSW 1</a>
+            <a href="pages/career.html" class="nav-link">Career Guide</a>
+            <a href="pages/about.html" class="nav-link">Tentang Kami</a>
+        </nav>
+        <div class="nav-auth">
+            <a href="pages/login.html" class="btn btn-outline">Masuk Member</a>
+            <a href="pages/payment.html" class="btn btn-primary">Daftar Sekarang</a>
         </div>
     </header>
 
-    <!-- HERO SECTION WITH PAGODA IMAGE -->
+    <!-- HERO SECTION -->
     <section class="hero">
-        <div class="container hero-container" style="display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
             
-            <div class="hero-content" style="flex: 1; min-width: 300px;">
+            <div style="flex: 1; min-width: 300px;">
                 <span class="badge-tag">EKOSISTEM PEMBELAJARAN INTEGRASI</span>
-                <h1>Raih Impian Berkarier di Jepang Bersama TRAVAWORK</h1>
-                <p>Platform persiapan terpadu Bahasa Jepang (JLPT N5–N3), Keterampilan Kerja SSW 1 (8 Sektor), dan Bimbingan Karier Terstruktur dalam satu paket lengkap.</p>
+                <h1 style="font-size: 2.5rem; font-weight: 800; margin: 15px 0; line-height: 1.2;">Raih Impian Berkarier di Jepang Bersama TRAVAWORK</h1>
+                <p style="color: #666; line-height: 1.6; margin-bottom: 25px;">Platform persiapan terpadu Bahasa Jepang (JLPT N5–N3), Keterampilan Kerja SSW 1 (8 Sektor), dan Bimbingan Karier Terstruktur dalam satu paket lengkap.</p>
                 
-                <div class="hero-cta">
-                    <a href="pages/payment.html" class="btn btn-primary btn-large">Lihat Paket Rp999.000</a>
-                    <a href="pages/academy.html" class="btn btn-outline btn-large">Jelajahi LMS Academy</a>
+                <div style="margin-bottom: 30px;">
+                    <a href="pages/payment.html" class="btn btn-primary">Lihat Paket Rp999.000</a>
+                    <a href="pages/academy.html" class="btn btn-outline">Jelajahi LMS Academy</a>
                 </div>
 
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <strong>JLPT N5-N3</strong>
-                        <span>Modul Terstruktur</span>
+                <div style="display: flex; gap: 20px; border-top: 1px solid #eee; padding-top: 20px;">
+                    <div>
+                        <strong style="display:block;">JLPT N5-N3</strong>
+                        <small style="color:#777;">Modul Terstruktur</small>
                     </div>
-                    <div class="stat-item">
-                        <strong>8 Sektor SSW</strong>
-                        <span>Soal & Istilah Teknis</span>
+                    <div>
+                        <strong style="display:block;">8 Sektor SSW</strong>
+                        <small style="color:#777;">Soal & Istilah Teknis</small>
                     </div>
-                    <div class="stat-item">
-                        <strong>Full Access</strong>
-                        <span>Akses Selamanya</span>
+                    <div>
+                        <strong style="display:block;">Full Access</strong>
+                        <small style="color:#777;">Akses Selamanya</small>
                     </div>
                 </div>
             </div>
 
-            <!-- GAMBAR PAGODA DI SAMPING HERO -->
-            <div class="hero-image-wrapper" style="flex: 1; min-width: 300px; text-align: center;">
-                <img src="assets/images/travawork-pagoda-4k-4.png" alt="TRAVAWORK Japan Pagoda" style="width: 100%; max-width: 500px; height: auto; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+            <!-- GAMBAR PAGODA -->
+            <div style="flex: 1; min-width: 300px; text-align: center;">
+                <img src="./assets/images/travawork-pagoda-4k-4.png" alt="TRAVAWORK Japan Pagoda" style="width: 100%; max-width: 480px; height: auto; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
             </div>
 
-        </div>
-    </section>
-
-    <!-- EIGHT SECTORS SUMMARY -->
-    <section class="program-summary" style="padding: 60px 0; background: var(--bg-alt);">
-        <div class="container">
-            <div class="section-header">
-                <h2>Program Unggulan TRAVAWORK</h2>
-                <p>Semua yang kamu butuhkan untuk lulus ujian dan siap kerja di Jepang.</p>
-            </div>
-
-            <div class="grid grid-3">
-                <div class="card">
-                    <h3>1. JLPT N5 – N3 LMS</h3>
-                    <p>Pembelajaran bahasa Jepang dari nol, penguasaan Hiragana, Katakana, Kanji, Tata Bahasa, hingga Listening.</p>
-                    <a href="pages/jlpt.html" class="btn btn-outline btn-full" style="margin-top:15px;">Mulai Belajar JLPT</a>
-                </div>
-
-                <div class="card">
-                    <h3>2. SSW 1 (8 Sektor Utama)</h3>
-                    <p>Persiapan ujian keahlian khusus Kaigo, Pertanian, Pengolahan Makanan, Restoran, Cleaning, Hotel, Manufaktur, & Konstruksi.</p>
-                    <a href="pages/ssw.html" class="btn btn-outline btn-full" style="margin-top:15px;">Pelajari SSW 1</a>
-                </div>
-
-                <div class="card">
-                    <h3>3. Career Guide & Resume</h3>
-                    <p>Bimbingan pembuatan CV Jepang (Rirekisho), latihan simulasi wawancara (Mensetsu), dan tips kehidupan di Jepang.</p>
-                    <a href="pages/career.html" class="btn btn-outline btn-full" style="margin-top:15px;">Buka Career Guide</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PRICING BANNER SECTION -->
-    <section class="pricing-banner" style="padding: 60px 0;">
-        <div class="container">
-            <div class="card" style="background: #111111; color: #FFFFFF; text-align: center; padding: 50px 20px;">
-                <span class="badge-tag" style="background: var(--accent-red); color:#fff;">PENAWARAN TERBAIK</span>
-                <h2 style="font-size: 2.2rem; margin-top: 15px;">Satu Harga untuk Seluruh Fitur</h2>
-                <p style="color: #AAAAAA; max-width: 600px; margin: 10px auto;">Dapatkan akses penuh LMS JLPT, 8 Sektor SSW 1, Bimbingan Karier, Modul Digital PDF, dan Member Area.</p>
-                
-                <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent-red); margin: 20px 0;">
-                    Rp999.000 <span style="font-size: 1rem; color: #888; font-weight: 400;">/ Akses Selamanya</span>
-                </div>
-
-                <a href="pages/payment.html" class="btn btn-primary btn-large">Daftar Sekarang Juga</a>
-            </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <a href="index.html" class="logo">TRAVAWORK</a>
-                <p>Platform belajar dan persiapan karier terpercaya untuk membantu tenaga kerja Indonesia sukses di Jepang.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Program</h4>
-                <ul>
-                    <li><a href="pages/jlpt.html">JLPT N5–N3</a></li>
-                    <li><a href="pages/ssw.html">SSW 1</a></li>
-                    <li><a href="pages/career.html">Career Guide</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Navigasi</h4>
-                <ul>
-                    <li><a href="pages/about.html">Tentang Kami</a></li>
-                    <li><a href="pages/blog.html">Artikel & Blog</a></li>
-                    <li><a href="pages/contact.html">Kontak</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Member Area</h4>
-                <ul>
-                    <li><a href="pages/login.html">Login Member</a></li>
-                    <li><a href="pages/dashboard.html">Dashboard LMS</a></li>
-                    <li><a href="pages/payment.html">Pendaftaran Paket</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2026 TRAVAWORK. All rights reserved.</p>
-            </div>
+    <footer style="background: #111; color: #fff; padding: 40px 0; margin-top: 60px;">
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2026 TRAVAWORK. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- JAVASCRIPT -->
-    <script src="assets/js/app.js"></script>
 </body>
 </html>
