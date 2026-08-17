@@ -1,0 +1,74 @@
+/* ==========================================================================
+   TRAVAWORK SSW 1 STYLESHEET
+   Wajib disimpan di: assets/css/ssw.css
+   ========================================================================== */
+
+.ssw-main {
+    padding: 60px 0;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.ssw-sector-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ssw-sector-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    border-color: var(--accent-red);
+}
+
+.sector-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.ssw-sector-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.ssw-sector-card p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+}
+
+.ssw-spec-list {
+    list-style: none;
+    margin-bottom: 20px;
+    margin-top: auto;
+}
+
+.ssw-spec-list li {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    padding: 4px 0;
+    border-top: 1px dashed var(--border-color);
+}
+
+.sektor-detail-panel {
+    background: var(--bg-alt);
+    border-left: 4px solid var(--accent-red);
+    padding: 30px;
+}
+
+@media (max-width: 1024px) {
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+}
