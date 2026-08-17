@@ -521,3 +521,162 @@ body {
     }
 
 }
+/* =========================
+   ABOUT TRAVAWORK
+========================= */
+
+.about-travawork {
+    padding: 120px 0;
+    background: #ffffff;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: start;
+}
+
+.about-title h2 {
+    max-width: 600px;
+    font-size: clamp(38px, 5vw, 60px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+.about-text {
+    padding-top: 35px;
+}
+
+.about-text p {
+    color: #555555;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   PROGRAM
+========================= */
+
+.program-section {
+    padding: 120px 0;
+    background: #111111;
+    color: #ffffff;
+}
+
+.program-heading {
+    margin-bottom: 60px;
+}
+
+.program-heading h2 {
+    color: #ffffff;
+}
+
+.program-heading p {
+    color: #aaaaaa;
+}
+
+
+/* =========================
+   PROGRAM CARDS
+========================= */
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.program-card {
+    min-height: 440px;
+    padding: 32px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-8px);
+    border-color: #e00000;
+}
+
+.program-top {
+    display: flex;
+    justify-content: space-between;
+    color: #888888;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.program-content {
+    margin-top: auto;
+    margin-bottom: 40px;
+}
+
+.program-content h3 {
+    font-size: 36px;
+    letter-spacing: -1px;
+    margin-bottom: 18px;
+}
+
+.program-content p {
+    color: #aaaaaa;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.program-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #333333;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.program-bottom strong {
+    color: #e00000;
+    font-size: 22px;
+}
+
+
+/* =========================
+   PROGRAM MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .about-travawork {
+        padding: 80px 0;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .about-text {
+        padding-top: 0;
+    }
+
+    .program-section {
+        padding: 80px 0;
+    }
+
+    .program-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .program-card {
+        min-height: 360px;
+    }
+
+}
