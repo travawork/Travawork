@@ -1,0 +1,230 @@
+/* ==========================================================================
+   TRAVAWORK MEMBER, LOGIN, DASHBOARD & PAYMENT STYLESHEET
+   Wajib disimpan di: assets/css/member.css
+   ========================================================================== */
+
+/* LOGIN & FORM */
+.auth-section, .payment-section {
+    padding: 60px 0;
+    background-color: var(--bg-alt);
+    min-height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
+}
+
+.auth-card {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.auth-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.auth-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    transition: border-color 0.2s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--accent-red);
+}
+
+.prototype-warning {
+    background-color: #FFF3F3;
+    border: 1px solid #FFCDCD;
+    border-left: 4px solid var(--accent-red);
+    padding: 12px 15px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    color: #900;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.auth-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.link-red {
+    color: var(--accent-red);
+    font-weight: 600;
+}
+
+/* DASHBOARD */
+.dashboard-body {
+    background-color: var(--bg-alt);
+}
+
+.dashboard-navbar {
+    background-color: #FFFFFF;
+}
+
+.user-profile-summary {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.btn-small {
+    padding: 5px 12px;
+    font-size: 0.8rem;
+}
+
+.dashboard-content {
+    padding: 40px 0;
+}
+
+.welcome-box {
+    margin-bottom: 30px;
+}
+
+.welcome-box h2 {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+
+.welcome-box p {
+    color: var(--text-secondary);
+}
+
+.progress-bar-container {
+    margin-top: 20px;
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+.progress-track {
+    width: 100%;
+    height: 10px;
+    background-color: #E0E0E0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: var(--accent-red);
+    border-radius: 5px;
+}
+
+.member-gate-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gate-tag {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--accent-red);
+}
+
+.gate-header h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.gate-subnav {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.sub-link {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.sub-link:hover {
+    color: var(--accent-red);
+}
+
+.sub-link-info {
+    font-size: 0.8rem;
+    color: var(--accent-red);
+    font-weight: 600;
+}
+
+.resource-list {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.resource-list li {
+    margin-bottom: 8px;
+}
+
+/* PAYMENT */
+.payment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.price-tag-large {
+    margin: 20px 0;
+}
+
+.price-tag-large .currency {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.price-tag-large .amount {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--accent-red);
+}
+
+.payment-benefits p {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 850px) {
+    .payment-grid {
+        grid-template-columns: 1fr;
+    }
+}
