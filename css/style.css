@@ -397,3 +397,127 @@ body {
     }
 
 }
+/* =========================
+   WHY TRAVAWORK
+========================= */
+
+.why-travawork {
+    padding: 110px 0;
+    background: #f7f7f7;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin-bottom: 60px;
+}
+
+.section-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #e00000;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    max-width: 700px;
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    margin-bottom: 22px;
+}
+
+.section-heading p {
+    max-width: 600px;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   BENEFIT GRID
+========================= */
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: #dddddd;
+    border: 1px solid #dddddd;
+}
+
+.benefit-card {
+    min-height: 280px;
+    padding: 32px;
+    background: #ffffff;
+    transition: 0.25s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-number {
+    display: block;
+    margin-bottom: 60px;
+    color: #e00000;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.benefit-card h3 {
+    margin-bottom: 14px;
+    font-size: 22px;
+    letter-spacing: -0.5px;
+}
+
+.benefit-card p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   WHY MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .benefit-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .why-travawork {
+        padding: 75px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+        font-size: 38px;
+        letter-spacing: -1.5px;
+    }
+
+    .benefit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit-card {
+        min-height: auto;
+        padding: 28px;
+    }
+
+    .benefit-number {
+        margin-bottom: 40px;
+    }
+
+}
