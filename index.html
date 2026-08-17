@@ -3,218 +3,343 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travawork - Persiapan Karir & Kerja di Jepang</title>
+  <title>Travawork - Akademi Persiapan Karir & Kerja di Jepang</title>
+  <!-- Google Fonts: Inter & Noto Serif JP -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet">
+  
   <style>
+    :root {
+      --bg-dark: #0a0b0d;
+      --bg-card: #12141a;
+      --bg-card-hover: #1a1d26;
+      --accent-red: #bc002d; /* Crimson Red khas Bendera Jepang */
+      --accent-red-hover: #e60033;
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --border-color: #262933;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Inter', sans-serif;
     }
+
     body {
-      background-color: #0d0d0d;
-      color: #ffffff;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
       line-height: 1.6;
+      overflow-x: hidden;
     }
-    /* Navbar */
+
+    /* Navbar Modern */
     .navbar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 15px 5%;
-      background: #141414;
-      border-bottom: 1px solid #222;
+      padding: 18px 8%;
+      background: rgba(10, 11, 13, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
       position: sticky;
       top: 0;
       z-index: 100;
     }
     .logo {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       font-weight: 800;
-      color: #fff;
+      color: var(--text-main);
       text-decoration: none;
+      letter-spacing: -0.5px;
     }
-    .nav-btns .btn-login {
-      background: #eee;
-      color: #000;
-      padding: 8px 18px;
-      border-radius: 6px;
+    .logo span {
+      color: var(--accent-red);
+    }
+    .nav-btns {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    .btn-login {
+      color: var(--text-main);
+      padding: 10px 20px;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: 600;
-      margin-right: 10px;
+      font-size: 0.9rem;
+      transition: all 0.2s;
     }
-    .nav-btns .btn-register {
-      background: #e60012;
+    .btn-login:hover {
+      background: var(--border-color);
+    }
+    .btn-register {
+      background: var(--accent-red);
       color: #fff;
-      padding: 8px 18px;
-      border-radius: 6px;
+      padding: 10px 22px;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: 600;
+      font-size: 0.9rem;
+      box-shadow: 0 4px 14px rgba(188, 0, 45, 0.4);
+      transition: all 0.2s;
+    }
+    .btn-register:hover {
+      background: var(--accent-red-hover);
+      transform: translateY(-1px);
     }
 
-    /* Hero Section */
+    /* Hero Section dengan Nuansa Jepang Premium */
     .hero {
+      position: relative;
+      padding: 120px 20px 100px;
       text-align: center;
-      padding: 60px 20px 40px;
-      max-width: 900px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 80vh;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.35;
+      z-index: 0;
+      filter: saturate(1.2);
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(10, 11, 13, 0.4) 0%, rgba(10, 11, 13, 0.95) 100%);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 850px;
       margin: 0 auto;
     }
     .hero-tag {
-      color: #e60012;
-      font-weight: 800;
-      font-size: 0.85rem;
-      letter-spacing: 1.5px;
-      margin-bottom: 10px;
+      display: inline-block;
+      background: rgba(188, 0, 45, 0.15);
+      border: 1px solid rgba(188, 0, 45, 0.4);
+      color: #ff4d6d;
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 6px 16px;
+      border-radius: 20px;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
     }
     .hero h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       font-weight: 800;
-      margin-bottom: 15px;
+      line-height: 1.25;
+      margin-bottom: 20px;
+      letter-spacing: -0.5px;
     }
     .hero p {
-      color: #aaa;
-      margin-bottom: 25px;
-      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 35px;
+      font-size: 1.15rem;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .hero-btns .btn-primary {
-      background: #e60012;
-      color: #fff;
-      padding: 12px 24px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 700;
-      margin-right: 10px;
-      display: inline-block;
+    .hero-btns {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
     }
-    .hero-btns .btn-secondary {
-      border: 1px solid #444;
-      color: #fff;
-      padding: 12px 24px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-      display: inline-block;
+
+    /* Stats Counter Section */
+    .stats-section {
+      background: var(--bg-card);
+      padding: 40px 20px;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
     }
-    .hero-img-container {
-      margin-top: 30px;
-      border-radius: 12px;
+    .stats-grid {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+    .stat-item h3 {
+      font-size: 2.2rem;
+      color: var(--text-main);
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+    .stat-item p {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    /* Section Intro & Video Showcase */
+    .intro-section {
+      padding: 90px 20px;
+      max-width: 950px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+    .section-desc {
+      color: var(--text-muted);
+      margin-bottom: 40px;
+      font-size: 1.05rem;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .video-wrapper {
+      position: relative;
+      border-radius: 16px;
       overflow: hidden;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      transition: transform 0.3s;
     }
-    .hero-img-container img {
+    .video-wrapper:hover {
+      transform: scale(1.01);
+    }
+    .video-wrapper img {
       width: 100%;
-      max-height: 400px;
-      object-fit: cover;
+      height: auto;
       display: block;
     }
 
-    /* Video Cover Section */
-    .video-section {
-      padding: 40px 20px;
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .video-section img {
-      width: 100%;
-      border-radius: 12px;
-      border: 1px solid #333;
-    }
-
-    /* Package Section */
+    /* Package Section Card (3D Offer) */
     .package-section {
-      padding: 50px 20px;
-      max-width: 900px;
+      padding: 60px 20px 90px;
+      max-width: 950px;
       margin: 0 auto;
     }
     .package-card {
-      background: #141414;
-      border-radius: 16px;
-      padding: 35px;
+      background: linear-gradient(145deg, #13151c 0%, #0d0e12 100%);
+      border-radius: 20px;
+      padding: 45px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 30px;
+      gap: 40px;
       flex-wrap: wrap;
-      border: 1px solid #222;
+      border: 1px solid rgba(188, 0, 45, 0.3);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+      position: relative;
     }
     .package-info {
       flex: 1;
-      min-width: 280px;
+      min-width: 300px;
     }
     .package-title {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       font-weight: 800;
-      margin: 10px 0;
+      margin: 12px 0 8px;
     }
     .package-price {
-      font-size: 2rem;
+      font-size: 2.2rem;
       font-weight: 800;
-      margin-bottom: 20px;
+      color: #fff;
+      margin-bottom: 25px;
     }
     .package-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin-bottom: 25px;
-      color: #ccc;
-      font-size: 0.9rem;
+      gap: 12px;
+      margin-bottom: 30px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    .package-grid div {
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
     .package-grid div::before {
-      content: "✔ ";
-      color: #e60012;
+      content: "✔";
+      color: var(--accent-red);
       font-weight: bold;
     }
     .package-image {
-      flex: 0 0 200px;
+      flex: 0 0 220px;
       text-align: center;
       margin: 0 auto;
     }
     .package-image img {
       width: 100%;
-      max-width: 200px;
-      height: auto;
+      max-width: 220px;
+      filter: drop-shadow(0 15px 20px rgba(0,0,0,0.7));
     }
 
-    /* Section Program */
+    /* Programs Grid Cards */
     .programs-section {
-      padding: 50px 20px;
-      max-width: 1000px;
+      padding: 80px 20px 100px;
+      max-width: 1100px;
       margin: 0 auto;
       text-align: center;
     }
-    .programs-section h2 {
-      font-size: 2rem;
-      margin-bottom: 30px;
-    }
     .program-cards {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
     }
     .card {
-      background: #141414;
-      border-radius: 12px;
+      background: var(--bg-card);
+      border-radius: 16px;
       overflow: hidden;
-      width: 300px;
       text-align: left;
-      border: 1px solid #222;
+      border: 1px solid var(--border-color);
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(188, 0, 45, 0.5);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.5);
     }
     .card img {
       width: 100%;
-      height: 180px;
+      height: 200px;
       object-fit: cover;
     }
     .card-body {
-      padding: 20px;
+      padding: 25px;
     }
     .card-body h3 {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       margin-bottom: 10px;
+      font-weight: 700;
     }
     .card-body p {
-      color: #aaa;
-      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.2rem; }
+      .package-card { padding: 30px 20px; }
+      .package-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -222,84 +347,137 @@
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <a href="#" class="logo">travawork</a>
+    <a href="#" class="logo">travawork<span>.</span></a>
     <div class="nav-btns">
       <a href="#" class="btn-login">Masuk</a>
       <a href="#" class="btn-register">Gabung Sekarang</a>
     </div>
   </nav>
 
-  <!-- HERO SECTION -->
+  <!-- HERO SECTION (JAPANESE LANDSCAPE AMBIENCE) -->
   <section class="hero">
-    <div class="hero-tag">TRAVAWORK ACADEMY</div>
-    <h1>Siap Kerja & Berkarier di Jepang?</h1>
-    <p>Persiapkan bahasa Jepang, kompetensi kerja, dan kariermu bersama Travawork.</p>
-    <div class="hero-btns">
-      <a href="#" class="btn-primary">Mulai Belajar</a>
-      <a href="#" class="btn-secondary">Lihat Program</a>
-    </div>
-    <div class="hero-img-container">
-      <img src="assets/images/hero-japan.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1000&q=80';" alt="Travawork Japan Pagoda">
+    <!-- Gambar Hero: Pagoda Chureito & Gunung Fuji -->
+    <img src="assets/images/hero-japan.jpg" 
+         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1600&q=80';" 
+         class="hero-bg" 
+         alt="Jepang Gunung Fuji dan Pagoda">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-tag">🌸 TRAVAWORK ACADEMY</div>
+      <h1>Siap Kerja & Berkarier Profesional di Jepang?</h1>
+      <p>Kuasai bahasa Jepang dari dasar, persiapkan dokumen resmi, dan raih sertifikasi kerja Tokutei Ginou bersama bimbingan ahli.</p>
+      <div class="hero-btns">
+        <a href="#" class="btn-register" style="padding: 14px 28px; font-size: 1rem;">Mulai Belajar Sekarang</a>
+        <a href="#" class="btn-login" style="border: 1px solid var(--border-color); padding: 14px 28px; font-size: 1rem;">Lihat Program</a>
+      </div>
     </div>
   </section>
 
-  <!-- VIDEO COVER SECTION -->
-  <section class="video-section">
-    <img src="assets/images/video-cover.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80';" alt="Video Cover">
+  <!-- STATISTIK ANGKA PERTUMBUHAN -->
+  <section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <h3>10.000+</h3>
+        <p>Member Aktif</p>
+      </div>
+      <div class="stat-item">
+        <h3>50+</h3>
+        <p>Video Pembelajaran HD</p>
+      </div>
+      <div class="stat-item">
+        <h3>200+</h3>
+        <p>Materi & Simulasi Soal</p>
+      </div>
+      <div class="stat-item">
+        <h3>8</h3>
+        <p>Sektor Kerja SSW</p>
+      </div>
+      <div class="stat-item">
+        <h3>100%</h3>
+        <p>Dukungan Bimbingan</p>
+      </div>
+    </div>
   </section>
 
-  <!-- PAKET PROMO SECTION -->
+  <!-- MENGAPA TRAVAWORK & VIDEO SHOWCASE -->
+  <section class="intro-section">
+    <h2 class="section-title">Mengapa Memilih Travawork?</h2>
+    <p class="section-desc">Kurikulum terstruktur sesuai standar industri Jepang, dilengkapi modul interaktif dan bimbingan simulasi wawancara langsung.</p>
+    
+    <div class="video-wrapper">
+      <!-- Gambar Video Cover: Pemandangan Kota Tokyo Malam Hari -->
+      <img src="assets/images/video-cover.jpg" 
+           onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80';" 
+           alt="Tokyo Night Skyline - Intro Video">
+    </div>
+  </section>
+
+  <!-- PAKET PROMO KOMPLIT -->
   <section class="package-section">
     <div class="package-card">
       <div class="package-info">
-        <div class="hero-tag">TRAVAWORK COMPLETE PACKAGE</div>
+        <div class="hero-tag">PENWARAN TERBAIK</div>
         <div class="package-title">JLPT N5–N3 + SSW 1 + Career Guide</div>
         <div class="package-price">Rp999.000</div>
         
         <div class="package-grid">
-          <div>JLPT N5, N4, N3</div>
-          <div>Akses Seumur Hidup</div>
-          <div>SSW 1 (8 Bidang)</div>
-          <div>Sertifikat Kelulusan</div>
-          <div>Career Guide Lengkap</div>
-          <div>Dukungan Karier</div>
+          <div>JLPT N5, N4, & N3</div>
+          <div>Akses Akselerasi Seumur Hidup</div>
+          <div>SSW 1 (8 Bidang Pilihan)</div>
+          <div>Sertifikat Kelulusan Resmi</div>
+          <div>Career Guide & Template CV</div>
+          <div>Konsultasi Penyaluran Kerja</div>
         </div>
 
-        <a href="#" class="btn-primary" style="background:#e60012; color:#fff; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:700; display:inline-block;">Dapatkan Sekarang</a>
+        <a href="#" class="btn-register" style="display:inline-block; padding: 12px 30px;">Dapatkan Paket Lengkap</a>
       </div>
 
       <div class="package-image">
-        <img src="assets/images/package-box.png" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80';" alt="Package Box">
+        <!-- Gambar Mockup Product Box -->
+        <img src="assets/images/package-box.png" 
+             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80';" 
+             alt="Travawork Package Box">
       </div>
     </div>
   </section>
 
-  <!-- PROGRAM UTAMA SECTION -->
+  <!-- PROGRAM UTAMA MODUL -->
   <section class="programs-section">
-    <h2>Program Utama</h2>
+    <h2 class="section-title">Program Utama Kami</h2>
+    <p class="section-desc">Pilih jalur pelatihan yang sesuai dengan target karirmu di Jepang.</p>
+    
     <div class="program-cards">
       
+      <!-- Program 1: JLPT (Gambar Kelas Bahasa / Kanji) -->
       <div class="card">
-        <img src="assets/images/program-jlpt.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=600&q=80';" alt="Program JLPT">
+        <img src="assets/images/program-jlpt.jpg" 
+             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1528164344705-47542687990d?auto=format&fit=crop&w=600&q=80';" 
+             alt="Persiapan Ujian JLPT Bahasa Jepang">
         <div class="card-body">
-          <h3>JLPT N5–N3</h3>
-          <p>Materi persiapan ujian kemampuan bahasa Jepang dari tingkat dasar hingga menengah secara lengkap.</p>
+          <h3>Materi JLPT N5 – N3</h3>
+          <p>Pembelajaran komprehensif kosakata, tata bahasa, kanji, dan pendengaran (Choukai) untuk menembus ujian sertifikasi JLPT.</p>
         </div>
       </div>
 
+      <!-- Program 2: SSW (Gambar Industri / Kerja Profesional) -->
       <div class="card">
-        <img src="assets/images/program-ssw.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80';" alt="Program SSW 1">
+        <img src="assets/images/program-ssw.jpg" 
+             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80';" 
+             alt="Sertifikasi Tokutei Ginou SSW 1">
         <div class="card-body">
-          <h3>SSW 1 (Specified Skilled Worker)</h3>
-          <p>Pelatihan keahlian khusus untuk persiapan lulus ujian kerja dan bekerja di Jepang.</p>
+          <h3>Sertifikasi SSW 1</h3>
+          <p>Persiapan ujian keahlian khusus Tokutei Ginou untuk 8 bidang industri utama seperti manufaktur, perhotelan, dan pengolahan makanan.</p>
         </div>
       </div>
 
+      <!-- Program 3: Career Guide (Gambar Bisnis / Office Tokyo) -->
       <div class="card">
-        <img src="assets/images/program-career.jpg" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80';" alt="Career Guide">
+        <img src="assets/images/program-career.jpg" 
+             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80';" 
+             alt="Panduan Bimbingan Karir Jepang">
         <div class="card-body">
-          <h3>Career Guide & Support</h3>
-          <p>Panduan penyusunan CV standar Jepang, wawancara kerja, dan bimbingan karir profesional.</p>
+          <h3>Career Support & Mentorship</h3>
+          <p>Pelatihan pembuatan CV standar Jepang (Rirekisho), strategi wawancara kerja (Mensetsu), dan bimbingan adaptasi budaya kerja.</p>
         </div>
       </div>
 
