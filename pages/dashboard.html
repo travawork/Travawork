@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard LMS • TRAVAWORK Member Area</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/components.css">
+    <link rel="stylesheet" href="../assets/css/member.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+
+    <header class="navbar dashboard-navbar">
+        <div class="container navbar-container">
+            <a href="../index.html" class="logo">
+                TRAVAWORK <span class="badge-tag">MEMBER AREA</span>
+            </a>
+            <div class="user-profile-summary">
+                <span id="userNameDisplay">Siswa TRAVAWORK</span>
+                <a href="login.html" class="btn btn-outline btn-small">Keluar</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="dashboard-content">
+        <div class="container">
+            
+            <div class="welcome-box card">
+                <h2>Selamat Datang di Member Area TRAVAWORK!</h2>
+                <p>Ini adalah ekosistem belajar terpadu kamu. Pilih salah satu pintu masuk di bawah untuk melanjutkan pembelajaran.</p>
+                
+                <div class="progress-bar-container">
+                    <div class="progress-label">
+                        <span>Progress Keseluruhan Belajar</span>
+                        <strong>35% Selesai</strong>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 35%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 PINTU UTAMA MEMBER AREA (JLPT, SSW, CAREER) -->
+            <div class="grid grid-3 member-gateways">
+                
+                <!-- Gateway 1: JLPT -->
+                <div class="card member-gate-card">
+                    <div class="gate-header">
+                        <span class="gate-tag">BAHASA JEPANG</span>
+                        <h3>JLPT N5 – N3</h3>
+                    </div>
+                    <p>Akses LMS modul Hiragana, Katakana, Kanji, Grammar, Listening, dan Latihan Soal.</p>
+                    <div class="gate-subnav">
+                        <a href="jlpt.html#n5" class="sub-link">✓ Modul N5 (Dasar)</a>
+                        <a href="jlpt.html#n4" class="sub-link">✓ Modul N4 (Menengah Dasar)</a>
+                        <a href="jlpt.html#n3" class="sub-link">✓ Modul N3 (Menengah)</a>
+                    </div>
+                    <a href="jlpt.html" class="btn btn-primary btn-full" style="margin-top:15px;">Buka LMS JLPT</a>
+                </div>
+
+                <!-- Gateway 2: SSW 1 -->
+                <div class="card member-gate-card">
+                    <div class="gate-header">
+                        <span class="gate-tag">KETERAMPILAN KERJA</span>
+                        <h3>SSW 1 (Tokutei Ginou)</h3>
+                    </div>
+                    <p>Materi 8 sektor utama pekerjaan: Kaigo, Pertanian, Pengolahan Makanan, Restoran, Building Cleaning, Hotel, Manufaktur, dan Konstruksi.</p>
+                    <div class="gate-subnav">
+                        <span class="sub-link-info">8 Sektor Terbuka Sepenuhnya</span>
+                    </div>
+                    <a href="ssw.html" class="btn btn-primary btn-full" style="margin-top:15px;">Buka LMS SSW 1</a>
+                </div>
+
+                <!-- Gateway 3: Career Guide -->
+                <div class="card member-gate-card">
+                    <div class="gate-header">
+                        <span class="gate-tag">BIMBINGAN KARIER</span>
+                        <h3>Career Guide</h3>
+                    </div>
+                    <p>Panduan persiapan CV, Japanese Resume (履歴書), latihan wawancara, budaya kerja, dan persiapan keberangkatan.</p>
+                    <div class="gate-subnav">
+                        <a href="career/guide.html#rirekisho" class="sub-link">✓ Templat Download Rirekisho</a>
+                        <a href="career/guide.html#interview" class="sub-link">✓ Latihan Simulasi Interview</a>
+                    </div>
+                    <a href="career/guide.html" class="btn btn-primary btn-full" style="margin-top:15px;">Buka LMS Career Guide</a>
+                </div>
+
+            </div>
+
+            <!-- MODUL DIGITAL & VIDEO -->
+            <div class="dashboard-resources grid grid-2" style="margin-top: 30px;">
+                <div class="card">
+                    <h3>Pusat Modul PDF Digital</h3>
+                    <p>Unduh berkas materi resmi dari folder tersimpan:</p>
+                    <ul class="resource-list">
+                        <li><code>assets/documents/academy/basic/</code> - Modul Hiragana & Katakana</li>
+                        <li><code>assets/documents/academy/pro/</code> - Modul Bank Soal JLPT & SSW</li>
+                        <li><code>assets/documents/academy/premium/</code> - Package Modul Eksklusif & Templat CV</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Video Pembelajaran Terintegrasi</h3>
+                    <p>Tonton penjelasan materi dalam format video tutorial terstruktur yang siap dihubungkan dengan player streaming lokal maupun embed.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-bottom" style="border:none;">
+            <p>&copy; 2026 TRAVAWORK. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/member.js"></script>
+</body>
+</html>
