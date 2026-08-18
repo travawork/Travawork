@@ -1,187 +1,24 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LMS JLPT N5–N3 • TRAVAWORK | Modul Bahasa Jepang</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/components.css">
-    <link rel="stylesheet" href="../assets/css/academy.css">
-    <link rel="stylesheet" href="../assets/css/responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program JLPT N5 - N3 | Travawork</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { background: #0a0b0d; color: #f3f4f6; font-family: 'Inter', sans-serif; padding: 40px 8%; }
+    a { color: #bc002d; text-decoration: none; font-weight: 600; }
+    .container { max-width: 800px; margin: 0 auto; background: #12141a; padding: 40px; border-radius: 16px; border: 1px solid #262933; }
+    h1 { margin-bottom: 20px; }
+    .btn-buy { display: inline-block; background: #bc002d; color: white; padding: 12px 24px; border-radius: 8px; margin-top: 20px; }
+  </style>
 </head>
 <body>
-
-    <header class="navbar">
-        <div class="container navbar-container">
-            <a href="../index.html" class="logo">
-                TRAVAWORK <span class="badge-tag">LEARN & PREPARE</span>
-            </a>
-            <nav class="nav-menu">
-                <a href="../index.html" class="nav-link">Home</a>
-                <a href="academy.html" class="nav-link active">Academy</a>
-                <a href="ssw.html" class="nav-link">SSW 1</a>
-                <a href="career.html" class="nav-link">Career Guide</a>
-                <a href="about.html" class="nav-link">Tentang Kami</a>
-            </nav>
-            <div class="nav-auth">
-                <a href="login.html" class="btn btn-outline">Masuk Member Area</a>
-            </div>
-        </div>
-    </header>
-
-    <section class="page-header">
-        <div class="container">
-            <h1>LMS Program JLPT N5 – N3</h1>
-            <p>Fondasi utama bahasa Jepang untuk lulus ujian JLPT & kesiapan komunikasi tempat kerja.</p>
-        </div>
-    </section>
-
-    <section class="lms-container">
-        <div class="container">
-            
-            <!-- LEVEL TABS -->
-            <div class="level-tabs">
-                <button class="tab-btn active" onclick="switchLevel('n5')">JLPT N5 (Dasar)</button>
-                <button class="tab-btn" onclick="switchLevel('n4')">JLPT N4 (Menengah Dasar)</button>
-                <button class="tab-btn" onclick="switchLevel('n3')">JLPT N3 (Menengah)</button>
-            </div>
-
-            <!-- LEVEL N5 CONTENT -->
-            <div id="level-n5" class="level-content active-content">
-                <h2>Kurikulum JLPT N5</h2>
-                <p>Tahap pemula untuk menguasai sistem penulisan dan tata bahasa dasar sehari-hari.</p>
-
-                <div class="lesson-grid">
-                    <div class="card lesson-card">
-                        <span class="lesson-num">Modul 01</span>
-                        <h4>Hiragana & Katakana</h4>
-                        <p>Pengenalan karakter, bunyi, cara menulis, dan pola penggabungan huruf.</p>
-                        <small>Status: Gratis Preview</small>
-                    </div>
-
-                    <div class="card lesson-card">
-                        <span class="lesson-num">Modul 02</span>
-                        <h4>Kosakata Dasar (Goi)</h4>
-                        <p>800+ kosakata penting sehari-hari dan istilah umum tempat kerja.</p>
-                        <small>Status: Terkunci (Member)</small>
-                    </div>
-
-                    <div class="card lesson-card">
-                        <span class="lesson-num">Modul 03</span>
-                        <h4>Grammar Dasar (Bunpou)</h4>
-                        <p>Pola kalimat dasar (~desu, ~masu, partikel WA, NI, DE, O).</p>
-                        <small>Status: Terkunci (Member)</small>
-                    </div>
-
-                    <div class="card lesson-card">
-                        <span class="lesson-num">Modul 04</span>
-                        <h4>Listening (Choukai)</h4>
-                        <p>Latihan pendengaran percakapan singkat dan intonasi baku bahasa Jepang.</p>
-                        <small>Status: Terkunci (Member)</small>
-                    </div>
-
-                    <div class="card lesson-card">
-                        <span class="lesson-num">Modul 05</span>
-                        <h4>Reading (Dokkai) & Latihan Soal</h4>
-                        <p>Membaca teks pendek dan latihan simulasi soal standar JLPT N5.</p>
-                        <small>Status: Terkunci (Member)</small>
-                    </div>
-                </div>
-            </div>
-
-            <!-- LEVEL N4 CONTENT -->
-            <div id="level-n4" class="level-content">
-                <h2>Kurikulum JLPT N4</h2>
-                <p>Penguatan tata bahasa dan kanji dasar yang menjadi syarat minimal bekerja di Jepang.</p>
-
-                <div class="lesson-grid">
-                    <div class="card lesson-card">
-                        <span class="lesson-num">Modul 01</span>
-                        <h4>Grammar N4 & Bentuk Kata Kerja</h4>
-                        <p>Perubahan bentuk kata kerja (Te-form, Nai-form, Ta-form, Potensial).</p>
-                        <small>Status: Terkunci (Member)</small>
-                    </div>
-
-                    <div class="card lesson-card">
-                        <span class="lesson-num">Modul 02</span>
-                        <h4>Kosakata & Kanji N4</h4>
-                        <p>150 Kanji dasar baru dan gabungan kata yang sering keluar dalam ujian.</p>
-                        <small>Status: Terkunci (Member)</small>
-                    </div>
-
-                    <div class="card lesson-card">
-                        <span class="lesson-num">Modul 03</span>
-                        <h4>Dokkai & Choukai N4</h4>
-                        <p>Pemahaman bacaan instruksi kerja dan audio percakapan sehari-hari.</p>
-                        <small>Status: Terkunci (Member)</small>
-                    </div>
-
-                    <div class="card lesson-card">
-                        <span class="lesson-num">Modul 04</span>
-                        <h4>Simulasi Latihan Soal N4</h4>
-                        <p>Paket soal dan pembahasan komprehensif persiapan ujian resmi.</p>
-                        <small>Status: Terkunci (Member)</small>
-                    </div>
-                </div>
-            </div>
-
-            <!-- LEVEL N3 CONTENT -->
-            <div id="level-n3" class="level-content">
-                <h2>Kurikulum JLPT N3</h2>
-                <p>Tingkat menengah untuk kelancaran berkomunikasi dan memahami nuansa bahasa di lingkungan kerja profesional.</p>
-
-                <div class="lesson-grid">
-                    <div class="card lesson-card">
-                        <span class="lesson-num">Modul 01</span>
-                        <h4>Grammar Menengah (Keigo & Bisnis)</h4>
-                        <p>Penggunaan Sonkeigo, Kenjougo, dan ragam bahasa sopan dunia kerja.</p>
-                        <small>Status: Terkunci (Member)</small>
-                    </div>
-
-                    <div class="card lesson-card">
-                        <span class="lesson-num">Modul 02</span>
-                        <h4>Kosakata & Kanji Menengah</h4>
-                        <p>600 Kanji N3 dan kosakata bidang operasional profesional.</p>
-                        <small>Status: Terkunci (Member)</small>
-                    </div>
-
-                    <div class="card lesson-card">
-                        <span class="lesson-num">Modul 03</span>
-                        <h4>Reading & Listening N3 Kompleks</h4>
-                        <p>Memahami artikel, berita, dan instruksi wawancara tingkat lanjut.</p>
-                        <small>Status: Terkunci (Member)</small>
-                    </div>
-
-                    <div class="card lesson-card">
-                        <span class="lesson-num">Modul 04</span>
-                        <h4>Tryout JLPT N3</h4>
-                        <p>Simulasi ujian penuh dengan pembatasan waktu standar JLPT.</p>
-                        <small>Status: Terkunci (Member)</small>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CTA BUNDLE LOCK -->
-            <div class="lms-cta-lock">
-                <h3>Buka Seluruh Akses LMS JLPT N5–N3</h3>
-                <p>Dapatkan materi lengkap, video tutorial, latihan soal, dan progress tracker dalam Paket Ekosistem TRAVAWORK.</p>
-                <div class="price-text">Harga Paket: <strong>Rp999.000</strong> (Akses Penuh Selamanya)</div>
-                <a href="payment.html" class="btn btn-primary btn-large" style="margin-top:15px;">Daftar Paket Rp999.000</a>
-            </div>
-
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container footer-bottom" style="border:none;">
-            <p>&copy; 2026 TRAVAWORK. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="../assets/js/app.js"></script>
-    <script src="../assets/js/academy.js"></script>
+  <div class="container">
+    <a href="index.html">← Kembali ke Beranda</a>
+    <h1 style="margin-top:20px;">Program Persiapan JLPT N5, N4, & N3</h1>
+    <p>Kuasai tata bahasa, kanji, kosakata, dan simulasi ujian JLPT resmi untuk persiapan bekerja di Jepang.</p>
+    <a href="payment.html" class="btn-buy">Daftar Program JLPT</a>
+  </div>
 </body>
 </html>
