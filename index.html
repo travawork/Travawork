@@ -299,6 +299,9 @@
       text-align: left;
       border: 1px solid var(--border-color);
       transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .card:hover {
       transform: translateY(-6px);
@@ -311,6 +314,10 @@
     }
     .card-body {
       padding: 25px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
     }
     .card-body h3 {
       font-size: 1.25rem;
@@ -320,6 +327,18 @@
     .card-body p {
       color: var(--text-muted);
       font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+    .btn-card {
+      display: inline-block;
+      color: #ff4d6d;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    .btn-card:hover {
+      color: var(--accent-red-hover);
     }
 
     @media (max-width: 768px) {
@@ -413,7 +432,7 @@
           <div>Konsultasi Penyaluran Kerja</div>
         </div>
 
-        <a href="register.html" class="btn-register" style="display:inline-block; padding: 12px 30px;">Dapatkan Paket Lengkap</a>
+        <a href="payment.html" class="btn-register" style="display:inline-block; padding: 12px 30px;">Dapatkan Paket Lengkap →</a>
       </div>
 
       <div class="package-image">
@@ -431,7 +450,7 @@
     
     <div class="program-cards">
       
-      <!-- Program 1 -->
+      <!-- Program 1: JLPT -->
       <div class="card">
         <img src="assets/images/program-jlpt.jpg" 
              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1528164344705-47542687990d?auto=format&fit=crop&w=600&q=80';" 
@@ -439,10 +458,11 @@
         <div class="card-body">
           <h3>Materi JLPT N5 – N3</h3>
           <p>Pembelajaran komprehensif kosakata, tata bahasa, kanji, dan pendengaran (Choukai) untuk menembus ujian sertifikasi JLPT.</p>
+          <a href="jlpt.html" class="btn-card">Lihat Detail Program JLPT →</a>
         </div>
       </div>
 
-      <!-- Program 2 -->
+      <!-- Program 2: SSW -->
       <div class="card">
         <img src="assets/images/program-ssw.jpg" 
              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80';" 
@@ -450,10 +470,11 @@
         <div class="card-body">
           <h3>Sertifikasi SSW 1</h3>
           <p>Persiapan ujian keahlian khusus Tokutei Ginou untuk 8 bidang industri utama seperti manufaktur, perhotelan, dan pengolahan makanan.</p>
+          <a href="ssw.html" class="btn-card">Lihat Detail Program SSW →</a>
         </div>
       </div>
 
-      <!-- Program 3 -->
+      <!-- Program 3: Career Guide -->
       <div class="card">
         <img src="assets/images/program-career.jpg" 
              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80';" 
@@ -461,6 +482,7 @@
         <div class="card-body">
           <h3>Career Support & Mentorship</h3>
           <p>Pelatihan pembuatan CV standar Jepang (Rirekisho), strategi wawancara kerja (Mensetsu), dan bimbingan adaptasi budaya kerja.</p>
+          <a href="career.html" class="btn-card">Lihat Panduan Karir →</a>
         </div>
       </div>
 
