@@ -1,104 +1,86 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pembayaran Paket • TRAVAWORK | Rp999.000</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/components.css">
-    <link rel="stylesheet" href="../assets/css/member.css">
-    <link rel="stylesheet" href="../assets/css/responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pembayaran - Travawork</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0a0b0d;
+      --bg-card: #12141a;
+      --accent-red: #bc002d;
+      --accent-red-hover: #e60033;
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --border-color: #262933;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background-color: var(--bg-dark); color: var(--text-main); line-height: 1.6; padding-bottom: 60px; }
+
+    .navbar {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 18px 8%; background: rgba(10, 11, 13, 0.9);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .logo { font-size: 1.5rem; font-weight: 800; color: var(--text-main); text-decoration: none; }
+    .logo span { color: var(--accent-red); }
+
+    .container { max-width: 650px; margin: 50px auto; padding: 0 20px; }
+    .card-box { background: var(--bg-card); border-radius: 16px; border: 1px solid var(--border-color); padding: 35px; }
+    h1 { font-size: 1.8rem; margin-bottom: 8px; }
+    .price-tag { font-size: 2.2rem; font-weight: 800; color: #fff; margin: 20px 0; border-bottom: 1px solid var(--border-color); padding-bottom: 20px; }
+
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; font-size: 0.9rem; margin-bottom: 8px; color: var(--text-muted); }
+    .form-group select, .form-group input {
+      width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color);
+      background: #0a0b0d; color: #fff; font-size: 0.95rem;
+    }
+    .btn-submit {
+      width: 100%; background: var(--accent-red); color: white; padding: 14px;
+      border: none; border-radius: 8px; font-weight: 700; font-size: 1rem; cursor: pointer;
+      margin-top: 10px; transition: background 0.2s;
+    }
+    .btn-submit:hover { background: var(--accent-red-hover); }
+  </style>
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="container navbar-container">
-            <a href="../index.html" class="logo">
-                TRAVAWORK <span class="badge-tag">PAYMENT</span>
-            </a>
-            <nav class="nav-menu">
-                <a href="../index.html" class="nav-link">Home</a>
-                <a href="academy.html" class="nav-link">Academy</a>
-            </nav>
+  <nav class="navbar">
+    <a href="index.html" class="logo">travawork<span>.</span></a>
+  </nav>
+
+  <div class="container">
+    <div class="card-box">
+      <a href="index.html" style="color: var(--text-muted); text-decoration: none; font-size: 0.85rem;">← Batal</a>
+      <h1 style="margin-top: 15px;">Konfirmasi Pembayaran</h1>
+      <p style="color: var(--text-muted);">Paket Lengkap JLPT N5-N3 + SSW 1 + Career Support</p>
+      
+      <div class="price-tag">Rp999.000</div>
+
+      <form action="register.html">
+        <div class="form-group">
+          <label>Metode Pembayaran</label>
+          <select required>
+            <option value="">-- Pilih Metode --</option>
+            <option value="bca">BCA Virtual Account</option>
+            <option value="mandiri">Mandiri Virtual Account</option>
+            <option value="qris">QRIS / Gopey / OVO</option>
+          </select>
         </div>
-    </header>
 
-    <section class="payment-section">
-        <div class="container">
-            <div class="payment-grid">
-                
-                <!-- DETAIL PAKET -->
-                <div class="card payment-summary">
-                    <span class="badge-pricing">PAKET INTEGRASI UTAMA</span>
-                    <h2>JLPT N5–N3 + SSW 1 + Career Guide</h2>
-                    <p>Akses selamanya ke seluruh ekosistem pembelajaran Travawork.</p>
-                    
-                    <div class="price-tag-large">
-                        <span class="currency">Rp</span>
-                        <span class="amount">999.000</span>
-                    </div>
-
-                    <div class="payment-benefits">
-                        <p>✓ LMS Bahasa Jepang (JLPT N5, N4, N3)</p>
-                        <p>✓ LMS Keterampilan SSW 1 (8 Sektor Utama)</p>
-                        <p>✓ Modul Bimbingan Career Guide & Templat Resume</p>
-                        <p>✓ Dokumen PDF, Video, & Progress Belajar</p>
-                    </div>
-                </div>
-
-                <!-- FORM PEMBAYARAN -->
-                <div class="card payment-form-card">
-                    <h3>Formulir Pendaftaran Member</h3>
-                    <p>Isi data diri untuk melanjutkan ke proses aktivasi akun.</p>
-
-                    <div class="prototype-warning">
-                        <strong>FRONT-END PLACEHOLDER:</strong><br>
-                        Sistem pembayaran ini menggunakan integrasi placeholder aman. Jangan memasukkan Kunci Rahasia / Payment credentials sungguhan ke dalam kode front-end di repository GitHub.
-                    </div>
-
-                    <form id="paymentForm" onsubmit="handlePaymentSubmit(event)">
-                        <div class="form-group">
-                            <label for="fullname">Nama Lengkap</label>
-                            <input type="text" id="fullname" class="form-input" placeholder="Masukkan nama lengkap" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="payEmail">Alamat Email</label>
-                            <input type="email" id="payEmail" class="form-input" placeholder="nama@email.com" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">Nomor WhatsApp</label>
-                            <input type="tel" id="phone" class="form-input" placeholder="081234567890" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Metode Pembayaran (Simulasi)</label>
-                            <select class="form-input" id="paymentMethod">
-                                <option value="qris">QRIS / E-Wallet</option>
-                                <option value="va">Virtual Account Bank</option>
-                                <option value="manual">Konfirmasi Manual</option>
-                            </select>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-full btn-large">Bayar Rp999.000Sekarang</button>
-                    </form>
-                </div>
-
-            </div>
+        <div class="form-group">
+          <label>Email Penerima Akses</label>
+          <input type="email" placeholder="nama@email.com" required>
         </div>
-    </section>
 
-    <footer class="footer">
-        <div class="container footer-bottom" style="border:none;">
-            <p>&copy; 2026 TRAVAWORK. All rights reserved.</p>
-        </div>
-    </footer>
+        <button type="submit" class="btn-submit">Lanjut ke Pembayaran →</button>
+      </form>
+    </div>
+  </div>
 
-    <script src="../assets/js/app.js"></script>
-    <script src="../assets/js/payment.js"></script>
 </body>
 </html>
