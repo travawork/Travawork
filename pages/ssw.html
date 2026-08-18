@@ -1,226 +1,103 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SSW 1 (Tokutei Ginou) • TRAVAWORK | LMS Keterampilan Kerja</title>
-    <!-- CSS Utama & Komponen -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/components.css">
-    <link rel="stylesheet" href="../assets/css/ssw.css">
-    <link rel="stylesheet" href="../assets/css/responsive.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sertifikasi SSW 1 - Travawork</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0a0b0d;
+      --bg-card: #12141a;
+      --accent-red: #bc002d;
+      --accent-red-hover: #e60033;
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --border-color: #262933;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    body { background-color: var(--bg-dark); color: var(--text-main); line-height: 1.6; padding-bottom: 60px; }
+    
+    .navbar {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 18px 8%; background: rgba(10, 11, 13, 0.9);
+      backdrop-filter: blur(12px); border-bottom: 1px solid var(--border-color);
+      position: sticky; top: 0; z-index: 100;
+    }
+    .logo { font-size: 1.5rem; font-weight: 800; color: var(--text-main); text-decoration: none; }
+    .logo span { color: var(--accent-red); }
+
+    .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+    .back-link { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; display: inline-block; margin-bottom: 20px; }
+    .back-link:hover { color: var(--text-main); }
+    
+    .header-card {
+      background: var(--bg-card); border-radius: 16px; border: 1px solid var(--border-color);
+      overflow: hidden; margin-bottom: 30px;
+    }
+    .header-card img { width: 100%; height: 280px; object-fit: cover; }
+    .header-content { padding: 30px; }
+    .badge { display: inline-block; background: rgba(188, 0, 45, 0.15); color: #ff4d6d; padding: 4px 12px; border-radius: 12px; font-weight: 700; font-size: 0.8rem; margin-bottom: 10px; }
+    h1 { font-size: 2.2rem; margin-bottom: 15px; }
+
+    .detail-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+    @media (max-width: 768px) { .detail-grid { grid-template-columns: 1fr; } }
+
+    .card-box { background: var(--bg-card); border-radius: 16px; border: 1px solid var(--border-color); padding: 25px; margin-bottom: 20px; }
+    .card-box h2 { font-size: 1.3rem; margin-bottom: 15px; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; }
+    .card-box ul { list-style: none; }
+    .card-box ul li { margin-bottom: 10px; color: var(--text-muted); font-size: 0.95rem; }
+    .card-box ul li::before { content: "✔ "; color: var(--accent-red); font-weight: bold; }
+
+    .btn-action { display: block; width: 100%; background: var(--accent-red); color: white; text-align: center; padding: 14px; border-radius: 8px; font-weight: 700; text-decoration: none; margin-top: 15px; }
+    .btn-action:hover { background: var(--accent-red-hover); }
+  </style>
 </head>
 <body>
 
-    <!-- NAVBAR HEADER -->
-    <header class="navbar">
-        <div class="container navbar-container">
-            <a href="../index.html" class="logo">
-                TRAVAWORK <span class="badge-tag">LEARN & PREPARE</span>
-            </a>
-            <nav class="nav-menu">
-                <a href="../index.html" class="nav-link">Home</a>
-                <a href="academy.html" class="nav-link">Academy</a>
-                <a href="ssw.html" class="nav-link active">SSW 1</a>
-                <a href="career.html" class="nav-link">Career Guide</a>
-                <a href="about.html" class="nav-link">Tentang Kami</a>
-            </nav>
-            <div class="nav-auth">
-                <a href="login.html" class="btn btn-outline">Masuk Member</a>
-                <a href="payment.html" class="btn btn-primary">Daftar Sekarang</a>
-            </div>
+  <nav class="navbar">
+    <a href="index.html" class="logo">travawork<span>.</span></a>
+  </nav>
+
+  <div class="container">
+    <a href="index.html" class="back-link">← Kembali ke Beranda</a>
+
+    <div class="header-card">
+      <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80" alt="SSW Tokutei Ginou">
+      <div class="header-content">
+        <span class="badge">KEAHLIAN KHUSUS</span>
+        <h1>Program Pelatihan SSW 1 (Tokutei Ginou)</h1>
+        <p style="color: var(--text-muted);">Bimbingan kelulusan ujian keahlian khusus SSW untuk kerja industri resmi di Jepang.</p>
+      </div>
+    </div>
+
+    <div class="detail-grid">
+      <div>
+        <div class="card-box">
+          <h2>Pilihan Sektor Industri</h2>
+          <ul>
+            <li>Pengolahan Makanan & Minuman (Food Processing)</li>
+            <li>Manufaktur & Permesinan</li>
+            <li>Perhotelan & Hospitality</li>
+            <li>Keperawatan / Caregiver (Kaigo)</li>
+            <li>Restoran & Food Service</li>
+            <li>Pertanian & Perikanan</li>
+          </ul>
         </div>
-    </header>
+      </div>
 
-    <!-- PAGE HEADER -->
-    <section class="page-header">
-        <div class="container">
-            <h1>LMS SSW 1 (Tokutei Ginou)</h1>
-            <p>Modul persiapan ujian keterampilan kerja terpadu untuk 8 bidang utama pekerjaan di Jepang.</p>
+      <div>
+        <div class="card-box">
+          <h2>Investasi Program</h2>
+          <div style="font-size: 1.8rem; font-weight: 800; color: #fff; margin-bottom: 15px;">Rp999.000</div>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">Mendapatkan modul tryout SSW dan latihan soal terupdate.</p>
+          <a href="payment.html" class="btn-action">Daftar SSW Sekarang</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
 
-    <!-- MAIN SSW CONTENT -->
-    <section class="ssw-main">
-        <div class="container">
-            
-            <div class="section-header">
-                <h2>8 Bidang Utama Pekerjaan SSW 1</h2>
-                <p>Pilih bidang keahlianmu untuk mengakses kamus istilah teknis, modul soal, dan materi terjemahan.</p>
-            </div>
-
-            <div class="grid grid-4">
-                
-                <!-- Sektor 1: Kaigo -->
-                <div class="card ssw-sector-card">
-                    <div class="sector-icon">🏥</div>
-                    <h3>1. Kaigo (Keperawatan)</h3>
-                    <p>Persiapan ujian bahasa Jepang khusus keperawatan dan tes keterampilan perawatan lansia.</p>
-                    <ul class="ssw-spec-list">
-                        <li>Istilah Medis & Fisik</li>
-                        <li>Etika Perawatan Lansia</li>
-                        <li>Simulasi Soal Ujian</li>
-                    </ul>
-                    <a href="#kaigo" class="btn btn-outline btn-full" onclick="openSektor('kaigo')">Detail Modul</a>
-                </div>
-
-                <!-- Sektor 2: Pertanian -->
-                <div class="card ssw-sector-card">
-                    <div class="sector-icon">🌾</div>
-                    <h3>2. Pertanian</h3>
-                    <p>Penguasaan teknologi bercocok tanam (Nogyou) dan pengelolaan peternakan (Chikusan).</p>
-                    <ul class="ssw-spec-list">
-                        <li>Bercocok Tanam Lahan/Greenhouse</li>
-                        <li>Pemeliharaan Ternak</li>
-                        <li>Kosakata Alat Tani</li>
-                    </ul>
-                    <a href="#pertanian" class="btn btn-outline btn-full" onclick="openSektor('pertanian')">Detail Modul</a>
-                </div>
-
-                <!-- Sektor 3: Pengolahan Makanan -->
-                <div class="card ssw-sector-card">
-                    <div class="sector-icon">🍱</div>
-                    <h3>3. Pengolahan Makanan</h3>
-                    <p>Standar sanitasi pabrik makanan (HACCP), pemrosesan, dan keselamatan kerja pabrik.</p>
-                    <ul class="ssw-spec-list">
-                        <li>Standar Kebersihan HACCP</li>
-                        <li>Operasional Mesin Pabrik</li>
-                        <li>Keselamatan Kerja (Anzen)</li>
-                    </ul>
-                    <a href="#pengolahan-makanan" class="btn btn-outline btn-full" onclick="openSektor('pengolahan-makanan')">Detail Modul</a>
-                </div>
-
-                <!-- Sektor 4: Restoran -->
-                <div class="card ssw-sector-card">
-                    <div class="sector-icon">🍜</div>
-                    <h3>4. Restoran (Gaishoku)</h3>
-                    <p>Pelayanan pelanggan (接客), manajemen dapur, dan standar kebersihan industri kuliner.</p>
-                    <ul class="ssw-spec-list">
-                        <li>Manajemen Dapur & Memasak</li>
-                        <li>Pelayanan & Keigo Restoran</li>
-                        <li>Manajemen Bahan Makanan</li>
-                    </ul>
-                    <a href="#restoran" class="btn btn-outline btn-full" onclick="openSektor('restoran')">Detail Modul</a>
-                </div>
-
-                <!-- Sektor 5: Building Cleaning -->
-                <div class="card ssw-sector-card">
-                    <div class="sector-icon">🧹</div>
-                    <h3>5. Building Cleaning</h3>
-                    <p>Teknik pembersihan bangunan komersial, gedung kantor, dan penggunaan bahan kimia pembersih.</p>
-                    <ul class="ssw-spec-list">
-                        <li>Pengoperasian Mesin Poles</li>
-                        <li>Sanitasi & Kimia Pembersih</li>
-                        <li>Keselamatan Gedung</li>
-                    </ul>
-                    <a href="#building-cleaning" class="btn btn-outline btn-full" onclick="openSektor('building-cleaning')">Detail Modul</a>
-                </div>
-
-                <!-- Sektor 6: Hotel -->
-                <div class="card ssw-sector-card">
-                    <div class="sector-icon">🏨</div>
-                    <h3>6. Hotel (Shukuhaku)</h3>
-                    <p>Operasional resepsionis, layanan kamar (Housekeeping), dan omotenashi (hospitality Jepang).</p>
-                    <ul class="ssw-spec-list">
-                        <li>Layanan Front Desk & Keigo</li>
-                        <li>Housekeeping & Room Service</li>
-                        <li>Penanganan Komplain</li>
-                    </ul>
-                    <a href="#hotel" class="btn btn-outline btn-full" onclick="openSektor('hotel')">Detail Modul</a>
-                </div>
-
-                <!-- Sektor 7: Manufaktur -->
-                <div class="card ssw-sector-card">
-                    <div class="sector-icon">⚙️</div>
-                    <h3>7. Manufaktur</h3>
-                    <p>Pengolahan logam, perakitan mesin, pencetakan plastik, dan sistem produksi pabrik.</p>
-                    <ul class="ssw-spec-list">
-                        <li>Pengoperasian Mesin Bubut/CNC</li>
-                        <li>Quality Control (QC)</li>
-                        <li>Budaya 5S Pabrik</li>
-                    </ul>
-                    <a href="#manufaktur" class="btn btn-outline btn-full" onclick="openSektor('manufaktur')">Detail Modul</a>
-                </div>
-
-                <!-- Sektor 8: Konstruksi -->
-                <div class="card ssw-sector-card">
-                    <div class="sector-icon">🏗️</div>
-                    <h3>8. Konstruksi</h3>
-                    <p>Pekerjaan pertukangan, pembesian, bekisting, hingga standar keselamatan kerja proyek tinggi.</p>
-                    <ul class="ssw-spec-list">
-                        <li>Membaca Gambar Proyek</li>
-                        <li>Keselamatan Kerja Tinggi (KYT)</li>
-                        <li>Penggunaan Alat Konstruksi</li>
-                    </ul>
-                    <a href="#konstruksi" class="btn btn-outline btn-full" onclick="openSektor('konstruksi')">Detail Modul</a>
-                </div>
-
-            </div>
-
-            <!-- DETAIL PREVIEW MODUL (MODAL / EXPANDABLE AREA) -->
-            <div id="sektor-detail-box" class="card sektor-detail-panel" style="display:none; margin-top:40px;">
-                <h3 id="sektor-title">Judul Sektor</h3>
-                <p id="sektor-desc">Deskripsi lengkap sektor SSW 1.</p>
-                <div class="placeholder-notice" style="margin-top:15px;">
-                    <small>[FRONT-END PLACEHOLDER: Modul lengkap PDF & Latihan Soal SSW 1 dapat diakses dari Dashboard Member Area setelah mendaftar paket Rp999.000]</small>
-                </div>
-            </div>
-
-            <!-- CTA BUNDLE -->
-            <div class="lms-cta-lock" style="margin-top:50px;">
-                <h3>Akses Seluruh 8 Sektor SSW 1 dalam Satu Paket</h3>
-                <p>Kamu tidak perlu membayar terpisah. Paket Travawork mencakup seluruh modul SSW 1, JLPT N5–N3, dan Career Guide.</p>
-                <div class="price-text">Harga Paket Integrasi: <strong>Rp999.000</strong></div>
-                <a href="payment.html" class="btn btn-primary btn-large" style="margin-top:15px;">Daftar Paket Rp999.000</a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <a href="../index.html" class="logo">TRAVAWORK</a>
-                <p>Platform belajar dan persiapan karier terpercaya untuk membantu tenaga kerja Indonesia sukses di Jepang.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Program</h4>
-                <ul>
-                    <li><a href="jlpt.html">JLPT N5–N3</a></li>
-                    <li><a href="ssw.html">SSW 1</a></li>
-                    <li><a href="career.html">Career Guide</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Navigasi</h4>
-                <ul>
-                    <li><a href="about.html">Tentang Kami</a></li>
-                    <li><a href="blog.html">Artikel & Blog</a></li>
-                    <li><a href="contact.html">Kontak</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Member</h4>
-                <ul>
-                    <li><a href="login.html">Login Area</a></li>
-                    <li><a href="dashboard.html">Dashboard LMS</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2026 TRAVAWORK. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JAVASCRIPT -->
-    <script src="../assets/js/app.js"></script>
-    <script src="../assets/js/ssw.js"></script>
 </body>
 </html>
